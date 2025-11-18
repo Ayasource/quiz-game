@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Leaderboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body { padding: 2rem; }
-      .leaderboard-entry { display:flex; justify-content:space-between; padding: .5rem 0; border-bottom: 1px solid #eee; }
-      .leaderboard-entry .meta { color: #666; font-size: .9rem; }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">QuizMaster</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="leaderboard.html">Leaderboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
+      <!-- add class to body styles via JS or server; using body.leaderboard-page for scoped CSS -->
       <h1 class="mb-3">Leaderboard</h1>
       <p class="text-muted">Top scores from local play (stored locally in your browser).</p>
 
@@ -23,46 +35,31 @@
         <button id="clearBtn" class="btn btn-outline-danger">Clear Leaderboard</button>
       </div>
     </div>
-
-    <script>
-      (function(){
-        const key = 'quiz_leaderboard';
-        function render() {
-          const container = document.getElementById('leaderboard');
-          container.innerHTML = '';
-          let list = [];
-          try { list = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) { list = []; }
-          if (!list.length) {
-            container.innerHTML = '<p class="text-muted">No scores yet. Play the quiz to add your score.</p>';
-            return;
+      <script>
+        (function(){
+          try{ document.body.classList.add('leaderboard-page'); }catch(e){}
+          const key = 'quiz_leaderboard';
+          function escapeHtml(s){ return String(s).replace(/[&<>"'\\]/g, c=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;","\\":"\\"})[c]); }
+          function render(){
+            const container = document.getElementById('leaderboard');
+            container.innerHTML = '';
+            let list = [];
+            try{ list = JSON.parse(localStorage.getItem(key) || '[]'); }catch(e){ list = []; }
+            if (!list.length) { container.innerHTML = '<p class="text-muted">No scores yet. Play the quiz to add your score.</p>'; return; }
+            list.sort((a,b)=> (b.score - a.score) || (new Date(a.date) - new Date(b.date)));
+            const top = list.slice(0,50);
+            const ol = document.createElement('ol'); ol.className = 'list-group list-group-numbered';
+            top.forEach(item => {
+              const li = document.createElement('li'); li.className = 'list-group-item d-flex justify-content-between align-items-start';
+              li.innerHTML = `<div class="ms-2 me-auto"><div class="fw-bold">${escapeHtml(item.name||'Player')}</div><div class="meta">${new Date(item.date).toLocaleString()}</div></div><span class="badge bg-primary rounded-pill">${escapeHtml(String(item.score))}</span>`;
+              ol.appendChild(li);
+            });
+            container.appendChild(ol);
           }
-          // sort by score desc, then date asc
-          list.sort((a,b)=> (b.score - a.score) || (new Date(a.date) - new Date(b.date)));
-          const top = list.slice(0, 50);
-          const ol = document.createElement('ol');
-          ol.className = 'list-group list-group-numbered';
-          top.forEach(item => {
-            const li = document.createElement('li');
-            li.className = 'list-group-item d-flex justify-content-between align-items-start';
-            li.innerHTML = `<div class="ms-2 me-auto">
-              <div class="fw-bold">${escapeHtml(item.name || 'Player')}</div>
-              <div class="meta">${new Date(item.date).toLocaleString()}</div>
-            </div>
-            <span class="badge bg-primary rounded-pill">${escapeHtml(String(item.score))}</span>`;
-            ol.appendChild(li);
-          });
-          container.appendChild(ol);
-        }
-        function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]); }
 
-        document.getElementById('clearBtn').addEventListener('click', ()=>{
-          if (!confirm('Clear the leaderboard? This cannot be undone.')) return;
-          localStorage.removeItem(key);
+          document.getElementById('clearBtn').addEventListener('click', ()=>{ if (!confirm('Clear the leaderboard?')) return; localStorage.removeItem(key); render(); });
           render();
-        });
-
-        render();
-      })();
-    </script>
+        })();
+      </script>
   </body>
 </html>

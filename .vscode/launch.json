@@ -12,17 +12,10 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Launch Chrome",
-            "request": "launch",
-            "type": "chrome",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
             "type": "chrome",
             "request": "launch",
-            "name": "Open geography.html",
-            "file": "c:\\Users\\User\\OneDrive\\Documents\\Vs code projects\\quiz-game\\geography.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\User\\OneDrive\\Documents\\Vs code projects\\quiz-game\\index.html"
         }
     ]
 }
