@@ -1,7 +1,8 @@
 // leaderboard.js - rendering and clearing leaderboard for leaderboard.html
 
 document.addEventListener('DOMContentLoaded', () => {
-  try{ document.body.classList.add('leaderboard-page'); } catch(e){}
+    const body = document.body;
+    if (body) body.classList.add('leaderboard-page');
   const key = 'quiz_leaderboard';
   function escapeHtml(s){ return String(s).replace(/[&<>"'\\]/g, c=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;","\\":"\\"})[c]); }
   function render(){

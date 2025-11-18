@@ -29,4 +29,18 @@
     body.leaderboard-page { padding: 2rem; }
     .leaderboard-entry { display:flex; justify-content:space-between; padding: .5rem 0; border-bottom: 1px solid #eee; }
     .leaderboard-entry .meta { color: #666; font-size: .9rem; }
+    /* Keep footer at the bottom of the viewport on short pages */
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    .site-footer { margin-top: auto; }
+    /* Index page circular action buttons */
+    .index-actions { display:flex; gap:1rem; align-items:center; margin-left: .5rem; }
+    .circle-action { display:flex; flex-direction:column; align-items:center; gap:.35rem; text-decoration:none; color:inherit; }
+    .circle-action .circle { width:72px; height:72px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.25rem; box-shadow:0 4px 10px rgba(0,0,0,0.08); }
+    .circle-action .label { font-size:.9rem; color:var(--bs-body-color); }
+    .circle-action:focus { outline: 3px solid rgba(13,110,253,0.15); border-radius:8px; }
+    .btn-geo .circle { background:#dc3545; }
+    .btn-arts .circle { background:#6f42c1; }
+    .btn-science .circle { background:#198754; }
+    .btn-sports .circle { background:#fd7e14; }
   

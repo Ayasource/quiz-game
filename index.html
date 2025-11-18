@@ -49,77 +49,39 @@
           <input id="timed-switch" type="checkbox" /> Timed quiz (30s per question)
         </label>
 
-        
-        <a href="geography.html" class="btn btn-outline-primary ms-2" id="geography-link" aria-label="Open Geography quiz" title="Play Geography">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M2 12h20"></path>
-            <path d="M12 2a15 15 0 0 1 0 20"></path>
-            <path d="M12 2a15 15 0 0 0 0 20"></path>
-          </svg>
-          <span class="visually-hidden">Play Geography</span>
-        </a>
-        <a href="arts.html" class="btn btn-outline-primary ms-2" id="arts-link" aria-label="Open Arts quiz">Play Arts</a>
-        <a href="science.html" class="btn btn-outline-primary ms-2" id="science-link" aria-label="Open Science quiz">Play Science</a>
-        <a href="sports.html" class="btn btn-outline-primary ms-2" id="sports-link" aria-label="Open Sports quiz">Play Sports</a>
+        <div class="index-actions ms-2" role="list">
+          <a role="listitem" href="geography.html" class="circle-action btn-geo" id="geography-link" aria-label="Open Geography quiz" title="Play Geography">
+            <div class="circle" aria-hidden="true">🌍</div>
+            <div class="label">Geography</div>
+          </a>
+
+          <a role="listitem" href="arts.html" class="circle-action btn-arts" id="arts-link" aria-label="Open Arts quiz">
+            <div class="circle" aria-hidden="true">A</div>
+            <div class="label">Arts</div>
+          </a>
+
+          <a role="listitem" href="science.html" class="circle-action btn-science" id="science-link" aria-label="Open Science quiz">
+            <div class="circle" aria-hidden="true">S</div>
+            <div class="label">Science</div>
+          </a>
+
+          <a role="listitem" href="sports.html" class="circle-action btn-sports" id="sports-link" aria-label="Open Sports quiz">
+            <div class="circle" aria-hidden="true">⚽</div>
+            <div class="label">Sports</div>
+          </a>
+        </div>
       </div>
       <div id="greeting" class="greeting" aria-live="polite"></div>
     </section>
 
-    <section id="quiz-area" class="card hidden" aria-labelledby="question-heading" role="region">
-      <header class="quiz-header">
-        <h2 id="question-heading" class="question-heading">Question</h2>
-        <div class="status">
-          <div class="score" aria-live="polite">Score: <span id="score">0</span></div>
-          <div class="progress" aria-hidden="false">Q <span id="q-index">0</span>/<span id="q-total">0</span></div>
-          <div id="timer" class="timer" aria-live="polite" hidden>30</div>
+  
         </div>
       </header>
 
-      <div id="question-panel" class="question-panel">
-        <div id="question-text" class="question-text"></div>
-        <div id="question-image" class="question-image" aria-hidden="true"></div>
+      
+     
 
-        <div id="choices" class="choices" role="radiogroup" aria-labelledby="question-heading"></div>
-
-        <div class="action-row">
-          <button id="submit-btn" class="btn" disabled>Submit</button>
-          <button id="skip-btn" class="btn ghost">Skip</button>
-        </div>
-
-        <div id="feedback" class="feedback" aria-live="assertive" role="status"></div>
-      </div>
-    </section>
-
-    <section id="results-area" class="card hidden" aria-labelledby="results-heading">
-      <h2 id="results-heading">Results</h2>
-      <p id="final-summary"></p>
-      <div class="result-stats">
-        <div>Correct: <span id="final-correct">0</span></div>
-        <div>Incorrect: <span id="final-incorrect">0</span></div>
-        <div>Score: <strong id="final-score">0</strong></div>
-      </div>
-      <div class="result-actions">
-        <button id="retry-btn" class="btn">Play Again</button>
-        <button id="view-leaderboard" class="btn ghost">View Leaderboard</button>
-      </div>
-      <div id="certificate" class="certificate" aria-hidden="true"></div>
-    </section>
-
-    <aside id="sidebar" class="card sidebar" aria-labelledby="sidebar-heading">
-      <h3 id="sidebar-heading">Sidebar</h3>
-      <div class="score-board">
-        <p>Best Score: <span id="best-score">—</span></p>
-        <p>Username: <span id="saved-username">Guest</span></p>
-      </div>
-      <div class="leaderboard card small" aria-labelledby="leaderboard-heading">
-        <h4 id="leaderboard-heading">Leaderboard</h4>
-        <ol id="leaderboard-list"></ol>
-      </div>
-      <div class="notes">
-        <p><small>Accessibility: use tab/arrow keys to navigate options; Enter to select. Images include alt text.</small></p>
-      </div>
-    </aside>
+    
   </main>
 
   <footer class="site-footer" role="contentinfo">

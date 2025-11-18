@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let score = 0;
   const scoreEl = document.getElementById('score');
 
-  function updateScore() { if (scoreEl) scoreEl.textContent = score; }
+  function updateScore() {
+    if (scoreEl) scoreEl.textContent = score;
+  }
 
   function saveScore(name) {
     const key = 'quiz_leaderboard';
@@ -19,12 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
   function enableLeaderboardLinks() {
     const pageLink = document.getElementById('leaderboardLink');
     const modalLink = document.getElementById('modalLeaderboardLink');
-    if (pageLink) { pageLink.classList.remove('disabled'); pageLink.setAttribute('aria-disabled','false'); pageLink.removeAttribute('tabindex'); }
-    if (modalLink) { modalLink.classList.remove('disabled'); modalLink.setAttribute('aria-disabled','false'); modalLink.removeAttribute('tabindex'); }
+    if (pageLink) {
+      pageLink.classList.remove('disabled');
+      pageLink.setAttribute('aria-disabled', 'false');
+      pageLink.removeAttribute('tabindex');
+    }
+    if (modalLink) {
+      modalLink.classList.remove('disabled');
+      modalLink.setAttribute('aria-disabled', 'false');
+      modalLink.removeAttribute('tabindex');
+    }
     const modalEl = document.getElementById('resultModal');
     if (modalEl && window.bootstrap && modalLink) {
-      modalEl.addEventListener('shown.bs.modal', function handler(){ try{ modalLink.focus(); }catch(e){} modalEl.removeEventListener('shown.bs.modal', handler); });
-    } else if (pageLink) try{ pageLink.focus(); }catch(e){}
+      modalEl.addEventListener('shown.bs.modal', function handler() {
+        try { modalLink.focus(); } catch (e) {}
+        modalEl.removeEventListener('shown.bs.modal', handler);
+      });
+    } else if (pageLink) {
+      try { pageLink.focus(); } catch (e) {}
+    }
   }
 
   function showResult() {
@@ -32,13 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (msg) msg.textContent = `Your score: ${score} / 5`;
     enableLeaderboardLinks();
     const modalEl = document.getElementById('resultModal');
-    if (modalEl && window.bootstrap) bootstrap.Modal.getOrCreateInstance(modalEl).show();
-    else try{ alert(`Quiz finished! Your score: ${score} / 5`); }catch(e){}
+    if (modalEl && window.bootstrap) {
+      bootstrap.Modal.getOrCreateInstance(modalEl).show();
+    } else {
+      try { alert(`Quiz finished! Your score: ${score} / 5`); } catch (e) {}
+    }
   }
 
   function finishQuiz() {
     let playerName = 'Player';
-    try { const input = prompt('Enter your name for the leaderboard (optional):',''); if (input && input.trim()) playerName = input.trim(); } catch(e) {}
+    if (typeof prompt === 'function') {
+      const input = prompt('Enter your name for the leaderboard (optional):', '');
+      if (input && input.trim()) playerName = input.trim();
+    }
     saveScore(playerName);
     showResult();
   }
@@ -48,22 +69,39 @@ document.addEventListener('DOMContentLoaded', () => {
     if (wraps.length) {
       wraps.forEach(w => {
         const val = Number(w.dataset.value);
-        w.classList.remove('correct','incorrect','disabled');
+        w.classList.remove('correct', 'incorrect', 'disabled');
         const b = w.querySelector('.choice-btn');
-        if (b) { b.disabled = true; b.classList.remove('btn-success','btn-danger','btn-outline-secondary','text-white'); }
-        if (val === correctIndex) { w.classList.add('correct'); if (b) b.classList.add('btn-success','text-white'); }
-        else if (b) b.classList.add('btn-outline-secondary');
+        if (b) {
+          b.disabled = true;
+          b.classList.remove('btn-success', 'btn-danger', 'btn-outline-secondary', 'text-white');
+        }
+        if (val === correctIndex) {
+          w.classList.add('correct');
+          if (b) b.classList.add('btn-success', 'text-white');
+        } else if (b) {
+          b.classList.add('btn-outline-secondary');
+        }
       });
       const chosenWrap = form.querySelector(`.choice-wrap[data-value="${chosenIndex}"]`);
       if (chosenWrap && chosenIndex !== correctIndex) {
         chosenWrap.classList.add('incorrect');
-        const cb = chosenWrap.querySelector('.choice-btn'); if (cb) { cb.classList.remove('btn-outline-secondary'); cb.classList.add('btn-danger','text-white'); }
+        const cb = chosenWrap.querySelector('.choice-btn');
+        if (cb) { cb.classList.remove('btn-outline-secondary'); cb.classList.add('btn-danger', 'text-white'); }
       }
     } else {
       const buttons = Array.from(form.querySelectorAll('.choice-btn'));
-      buttons.forEach(b => { const val = Number(b.dataset.value); b.disabled = true; b.classList.remove('correct','incorrect','btn-success','btn-danger','btn-outline-secondary'); if (val === correctIndex) b.classList.add('correct','btn','btn-success','text-white'); else b.classList.add('btn','btn-outline-secondary'); });
+      buttons.forEach(b => {
+        const val = Number(b.dataset.value);
+        b.disabled = true;
+        b.classList.remove('correct', 'incorrect', 'btn-success', 'btn-danger', 'btn-outline-secondary');
+        if (val === correctIndex) b.classList.add('correct', 'btn', 'btn-success', 'text-white');
+        else b.classList.add('btn', 'btn-outline-secondary');
+      });
       const chosenBtn = form.querySelector(`.choice-btn[data-value="${chosenIndex}"]`);
-      if (chosenBtn && chosenIndex !== correctIndex) { chosenBtn.classList.remove('btn-outline-secondary'); chosenBtn.classList.add('incorrect','btn','btn-danger','text-white'); }
+      if (chosenBtn && chosenIndex !== correctIndex) {
+        chosenBtn.classList.remove('btn-outline-secondary');
+        chosenBtn.classList.add('incorrect', 'btn', 'btn-danger', 'text-white');
+      }
     }
   }
 
@@ -91,23 +129,44 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.prev-btn').forEach(p => p.disabled = false);
     });
 
-    if (prevBtn) prevBtn.addEventListener('click', () => { const carouselEl = document.getElementById('questionCarousel'); if (!carouselEl || !window.bootstrap) return; bootstrap.Carousel.getOrCreateInstance(carouselEl).prev(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => {
+      const carouselEl = document.getElementById('questionCarousel');
+      if (!carouselEl || !window.bootstrap) return;
+      bootstrap.Carousel.getOrCreateInstance(carouselEl).prev();
+    });
   });
 
   // prevent moving forward until answered
   const carouselEl = document.getElementById('questionCarousel');
-  if (carouselEl) carouselEl.addEventListener('slide.bs.carousel', (e) => {
-    const items = Array.from(carouselEl.querySelectorAll('.carousel-item'));
-    const current = carouselEl.querySelector('.carousel-item.active');
-    if (!current) return; const currentIndex = items.indexOf(current); const nextIndex = items.indexOf(e.relatedTarget);
-    if (nextIndex > currentIndex) { const currentForm = current.querySelector('.choices-form'); if (currentForm && currentForm.dataset.answered !== 'true') e.preventDefault(); }
-  });
+  if (carouselEl) {
+    carouselEl.addEventListener('slide.bs.carousel', (e) => {
+      const items = Array.from(carouselEl.querySelectorAll('.carousel-item'));
+      const current = carouselEl.querySelector('.carousel-item.active');
+      if (!current) return;
+      const currentIndex = items.indexOf(current);
+      const nextIndex = items.indexOf(e.relatedTarget);
+      if (nextIndex > currentIndex) {
+        const currentForm = current.querySelector('.choices-form');
+        if (currentForm && currentForm.dataset.answered !== 'true') e.preventDefault();
+      }
+    });
+  }
 
   // delegated finish click
-  document.addEventListener('click', (ev) => { const f = ev.target.closest && ev.target.closest('.finish-btn'); if (!f) return; if (f.disabled) return; finishQuiz(); });
+  document.addEventListener('click', (ev) => {
+    const f = ev.target.closest && ev.target.closest('.finish-btn');
+    if (!f) return;
+    if (f.disabled) return;
+    finishQuiz();
+  });
 
   // guard disabled leaderboard anchor
-  const leaderboardLinkEl = document.getElementById('leaderboardLink'); if (leaderboardLinkEl) leaderboardLinkEl.addEventListener('click', (ev) => { if (leaderboardLinkEl.getAttribute('aria-disabled') === 'true') ev.preventDefault(); });
+  const leaderboardLinkEl = document.getElementById('leaderboardLink');
+  if (leaderboardLinkEl) {
+    leaderboardLinkEl.addEventListener('click', (ev) => {
+      if (leaderboardLinkEl.getAttribute('aria-disabled') === 'true') ev.preventDefault();
+    });
+  }
 
   updateScore();
 });
