@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Leaderboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body { padding: 2rem; }
+      .leaderboard-entry { display:flex; justify-content:space-between; padding: .5rem 0; border-bottom: 1px solid #eee; }
+      .leaderboard-entry .meta { color: #666; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-3">Leaderboard</h1>
+      <p class="text-muted">Top scores from local play (stored locally in your browser).</p>
+
+      <div id="leaderboard" class="mb-4"></div>
+
+      <div class="d-flex justify-content-between">
+        <a href="geography.html" class="btn btn-secondary">Back to Quiz</a>
+        <button id="clearBtn" class="btn btn-outline-danger">Clear Leaderboard</button>
+      </div>
+    </div>
+
+    <script>
+      (function(){
+        const key = 'quiz_leaderboard';
+        function render() {
+          const container = document.getElementById('leaderboard');
+          container.innerHTML = '';
+          let list = [];
+          try { list = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) { list = []; }
+          if (!list.length) {
+            container.innerHTML = '<p class="text-muted">No scores yet. Play the quiz to add your score.</p>';
+            return;
+          }
+          // sort by score desc, then date asc
+          list.sort((a,b)=> (b.score - a.score) || (new Date(a.date) - new Date(b.date)));
+          const top = list.slice(0, 50);
+          const ol = document.createElement('ol');
+          ol.className = 'list-group list-group-numbered';
+          top.forEach(item => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item d-flex justify-content-between align-items-start';
+            li.innerHTML = `<div class="ms-2 me-auto">
+              <div class="fw-bold">${escapeHtml(item.name || 'Player')}</div>
+              <div class="meta">${new Date(item.date).toLocaleString()}</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">${escapeHtml(String(item.score))}</span>`;
+            ol.appendChild(li);
+          });
+          container.appendChild(ol);
+        }
+        function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[c]); }
+
+        document.getElementById('clearBtn').addEventListener('click', ()=>{
+          if (!confirm('Clear the leaderboard? This cannot be undone.')) return;
+          localStorage.removeItem(key);
+          render();
+        });
+
+        render();
+      })();
+    </script>
+  </body>
+</html>

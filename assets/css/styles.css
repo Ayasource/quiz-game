@@ -1,0 +1,8 @@
+    
+      /* Minimal local styles to make the quiz card stand out */
+      .quiz-card { max-width: 720px; margin: 2rem auto; }
+      .choice-label { display: block; cursor: pointer; padding: .5rem; border-radius: .25rem; }
+      .choice-input:checked + .choice-label { background-color: #eef9ff; border: 1px solid #7ec4ff; }
+      .correct { background-color: #e6ffef !important; border-color: #2f9e5f !important; }
+      .incorrect { background-color: #fff0f0 !important; border-color: #d14b4b !important; }
+    
