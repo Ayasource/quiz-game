@@ -252,3 +252,50 @@ body.geography-page .quiz-card {
   background-color: rgba(255,255,255,0.94);
   backdrop-filter: blur(2px);
 }
+
+/* ---------------------------- */
+/* Fixed header (top) and footer (bottom) */
+/* ---------------------------- */
+:root {
+  --nav-height: 72px;
+  --footer-height: 72px;
+}
+
+/* Pin header / bootstrap navbar to the top of the viewport */
+.site-header,
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--nav-height);
+  z-index: 1050;
+}
+
+/* Pin footer to the bottom */
+.site-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--footer-height);
+  z-index: 1040;
+}
+
+/* Ensure page content isn't hidden behind fixed header/footer */
+html, body {
+  padding-top: var(--nav-height);
+  padding-bottom: var(--footer-height);
+}
+
+/* Shadows for the fixed bars */
+.site-header, .navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.site-footer {
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+}
+
+
+
+        
