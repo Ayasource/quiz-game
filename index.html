@@ -3,88 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>QuizMaster — Sports Quiz</title>
-  <meta name="description" content="QuizMaster — Sports-only demo quiz application." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>QuizMania</title>
+  <meta name="description" content="QuizMania — Demo quiz application with multiple categories." />
+    <!-- Bootstrap CSS (match geography page) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" type="image/png" href="assets/images/quizmaster-favicon.png">
 
 </head>
 
-<body>
-<header class="site-header">
-  <div class="container header-inner">
-    <h1 class="logo">QuizMaster</h1>
-
-    <form id="username-form" aria-label="Set username">
-      <label class="visually-hidden" for="username-input">Username</label>
-      <input id="username-input" type="text" placeholder="Enter username" maxlength="24">
-      <button class="btn primary" id="save-username">Save</button>
-    </form>
-  </div>
-</header>
-
-<main class="container main-layout">
-  
-  <!-- INTRO -->
-  <section id="intro" class="card">
-    <h2>Sports Quiz</h2>
-    <p>All questions are from sports. Press Start to play!</p>
-
-    <button id="start-btn" class="btn jumbo primary">Start Quiz</button>
-    <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo primary">Geography</button>
-    <div id="greeting" aria-live="polite"></div>
-  </section>
-
-  <!-- QUIZ -->
-  <section id="quiz-area" class="card hidden">
-    <header class="quiz-header">
-      <h2 id="question-heading">Question</h2>
-
-      <div class="status">
-        <div class="score-box"><strong>Score:</strong> <span id="score">0</span></div>
-        <div class="progress-box">Q <span id="q-index">0</span>/<span id="q-total">0</span></div>
+<body class="index-page">
+  <!-- Navigation Bar (copied from geography.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
+        QuizMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <div id="question-panel">
-      <div id="question-text" class="q-text"></div>
-
-      <div id="choices" class="choices" role="radiogroup"></div>
-
-      <div class="action-row">
-        <button id="submit-btn" class="btn success" disabled>Submit</button>
-        <button id="skip-btn" class="btn danger ghost">Skip</button>
+  <main>
+    <div class="container my-5">
+      <div class="row align-items-center mb-4">
+        <div class="col">
+          <h2 class="mb-0">Welcome to QuizMania</h2>
+        </div>
       </div>
 
-      <div id="feedback" class="feedback" aria-live="assertive"></div>
+      <div class="card quiz-card">
+        <div class="card-body">
+          <p>All questions are from various categories. Click a category to play.</p>
+          <div class="category-buttons mt-3">
+            <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo btn-cat-geo">Geography</button>
+            <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo btn-cat-art">Art</button>
+            <button id="start-history-btn" onclick="location.href='history.html'" class="btn jumbo btn-cat-history">History</button>
+            <button id="start-sports-btn" onclick="location.href='sports.html'" class="btn jumbo btn-cat-sports">Sports</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <!-- RESULTS -->
-  <section id="results-area" class="card hidden">
-    <h2>Results</h2>
-    <p id="final-summary"></p>
-
-    <div class="result-stats">
-      <p>Correct: <span id="final-correct">0</span></p>
-      <p>Incorrect: <span id="final-incorrect">0</span></p>
-      <p>Score: <strong id="final-score">0</strong></p>
-    </div>
-
-    <button id="retry-btn" class="btn jumbo primary">Play Again</button>
-  </section>
-
-  <!-- SIDEBAR -->
-  <aside class="card sidebar">
-    <h3>Sidebar</h3>
-    <p>Best Score: <span id="best-score">—</span></p>
-    <p>Username: <span id="saved-username">Guest</span></p>
-
-    <h4>Leaderboard</h4>
-    <ol id="leaderboard-list"></ol>
-  </aside>
-
-</main>
+  </main>
 
 <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
@@ -112,6 +86,8 @@
 
 
 
+<!-- Bootstrap JS bundle (for navbar, modals, carousel etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

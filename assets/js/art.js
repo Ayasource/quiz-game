@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
