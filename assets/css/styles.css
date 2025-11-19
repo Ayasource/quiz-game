@@ -42,6 +42,79 @@ body {
   align-items: center;
 }
 
+/* Ensure navbar brand shows logo at left with proper spacing */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Navbar background and link color (light aqua) */
+.navbar {
+  background-color: #bff7f5 !important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text {
+  color: #03363a !important;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #01292b !important;
+}
+
+/* Footer: slightly darker aqua than navbar */
+.site-footer {
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
+  padding: 1rem 0.75rem;
+}
+.site-footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-footer small {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.site-footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.site-footer .social-links a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.site-footer .social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 576px) {
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .site-footer .social-links {
+    justify-content: center;
+  }
+}
+
 .username-form input {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
@@ -146,9 +219,10 @@ body {
 }
 
 /* === FOOTER === */
+/* Final site-footer styling (keeps the darker aqua applied earlier) */
 .site-footer {
-  background: #293241;
-  color: #fff;
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
   padding: 1rem 0;
   margin-top: 2rem;
   text-align: center;
