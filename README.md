@@ -1,4 +1,4 @@
-# quiz-game
+# Quiz-game
 
 ## User Stories
 
@@ -150,4 +150,5 @@ Use JavaScript to alert the inviter when friends join.
 ![Daryl wireframes 2](<assets/images/Daryl wireframe v2.png>)
 ![Daryl wireframes 3](<assets/images/Daryl wireframe v3.png>)
 
-![Stuart wireframe](assets/images/Stuart%20wireframe.png)
+![Stuart wireframe 1](assets/images/Stuart%20wireframe.png)
+![Stuart wireframe 2](assets/images/Stuart%20wireframe%202.png)
