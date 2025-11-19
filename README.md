@@ -177,6 +177,16 @@ Use JavaScript to alert the inviter when friends join.
 ![Stuart front page v1 code 3](<assets/images/Stuart front page v1 code 3.png>)
 ![Stuart front page v1 code 4](<assets/images/Stuart front page v1 code 4.png>)
 
+### Website v2
+
+![Home page v2](assets/images/Home%20page%20v2.png)
+![Geography page v2](<assets/images/Geography page v2.png>)
+![Art page v2](<assets/images/Art page v2.png>)
+![History page v2](<assets/images/History page v2.png>)
+![Sports page v2](<assets/images/Sports page v2.png>)
+![About page v2](<assets/images/About page v2.png>)
+![Doc page v2](<assets/images/Doc page v2.png>)
+
 ## Code Development
 
 ### HTML
@@ -205,11 +215,15 @@ Use JavaScript to alert the inviter when friends join.
 ## Bugs
 ![First merge conflict](<assets/images/First merge conflict.png>)
 
+![Art page v2 bug](<assets/images/Art page v2 bug.png>)
+
 ## Code Validators
 
 ## Accessibility
 
 ### Lighthouse
+
+#### 1
 
 ![Home page lighthouse 1](<assets/images/Home page lighthouse 1.png>)
 ![About page lighthouse 1](<assets/images/About page lighthouse 1.png>)
@@ -218,9 +232,36 @@ Use JavaScript to alert the inviter when friends join.
 ![History page lighthouse 1](<assets/images/History page lighthouse 1.png>)
 ![Art page lighthouse 1](<assets/images/Art page lighthouse 1.png>)
 
+#### 2
+![Home page lighthouse v2](<assets/images/Home page lighthouse v2.png>)
+![Geography page lighthouse v2](<assets/images/Geography page lighthouse v2.png>)
+![Art page lighthouse v2](<assets/images/Art page lighthouse v2.png>)
+![History page lighthouse v2](<assets/images/History page lighthouse v2.png>)
+![Sports page lighthouse v2](<assets/images/Sports page lighthouse v2.png>)
+![About page lighthouse v2](<assets/images/About page lighthouse v2.png>)
+![Doc page lighthouse v2](<assets/images/Doc page lighthouse v2.png>)
+
+#### Desktop
+![Home page Desktop lighthouse v1](<assets/images/Home page Desktop lighthouse v1.png>)
+![Geography page Desktop lighthouse v1](<assets/images/Geography page Desktop lighthouse v1.png>)
+![Art page Desktop lighthouse v1](<assets/images/Art page Desktop lighthouse v1.png>)
+![History page Desktop lighthouse v1](<assets/images/History page Desktop lighthouse v1.png>)
+![Sports page Desktop lighthouse v1](<assets/images/Sports page Desktop lighthouse v1.png>)
+
+
+
 ## Miscellaneous
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
 
 ![geography1](assets/images/geography1.jpg)
 
 ![quiz-logo](assets/bayan-images/quiz-logo.png)
+
+![art-image](assets/images/art-image.jpg)
+
+![history-image](assets/images/history-image.jpg)
+
+![questions-image](assets/images/questions-image.jpg)
+
+![sports-image](assets/images/sports-image.jpg)
+
