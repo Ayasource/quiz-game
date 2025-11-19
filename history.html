@@ -76,6 +76,11 @@
 
   <div class="card quiz-card" id="quiz-card" aria-live="polite">
     <div class="card-body">
+           <!-- progress / score row -->
+       <div class="d-flex justify-content-between align-items-center mb-2">
+          <div id="progress" class="small text-muted">Question <span id="q-index">1</span> / <span id="q-total">5</span></div>
+         <div id="score-display" class="badge bg-primary text-white">Score: <span id="score-count">0</span></div>
+        </div>
       <h3 id="question-title" class="mb-3"></h3>
 
       <div id="answers"></div>
