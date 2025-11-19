@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   },
   {
     text: "How many players are on a basketball court per team?",
-    choices: ["5", "7", "9", "11"],
+    choices: ["5", "7", "9"],
     correct: 0
   },
   {
