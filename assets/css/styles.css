@@ -283,16 +283,24 @@ body.art-page .quiz-card {
 /* INDEX PAGE BACKGROUND       */
 /* ---------------------------- */
 body.index-page {
-  background-image: url('../images/questions-image.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* Force the intended background and improve cache-override reliability */
+  background-image: url('../images/questions-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 body.index-page .quiz-card {
   background-color: rgba(255,255,255,0.94);
   backdrop-filter: blur(2px);
+}
+
+/* Mobile: avoid `background-attachment: fixed` (poor performance/behavior on phones) */
+@media (max-width: 768px) {
+  body.index-page {
+    background-attachment: scroll !important;
+  }
 }
 
 /* ---------------------------- */
