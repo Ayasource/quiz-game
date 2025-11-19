@@ -1,4 +1,16 @@
-# Quiz-game
+# Quiz game
+## Contents
+1. About this project
+2. User Stories
+3. Wireframes
+4. Website Iterations
+5. Code Development
+6. Working with Co-pilot
+7. Bugs
+8. Code Validators
+9. Accessibility
+
+## About QuizMaster
 
 ## User Stories
 
@@ -153,9 +165,19 @@ Use JavaScript to alert the inviter when friends join.
 ![Stuart wireframe 1](assets/images/Stuart%20wireframe.png)
 ![Stuart wireframe 2](assets/images/Stuart%20wireframe%202.png)
 
-## Website
+## Website Iterations
 
-#### Website
+![Stuart front page v1](<assets/images/Stuart front page v1.png>)
+![Stuart front page v1 code 2](<assets/images/Stuart front page v1 code 2.png>)
+![Stuart front page v1 code 3](<assets/images/Stuart front page v1 code 3.png>)
+![Stuart front page v1 code 4](<assets/images/Stuart front page v1 code 4.png>)
 
+## Code Development
 
-#### Code
+## Working with Co-pilot
+
+## Bugs
+
+## Code Validators
+
+## Accessibility
