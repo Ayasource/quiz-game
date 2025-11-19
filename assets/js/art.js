@@ -2,32 +2,32 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
-    {
-      text: "Who was the first President of the United States?",
-      choices: ["John Adams", "George Washington", "Thomas Jefferson"],
-      correct: 1
-    },
-    {
-      text: "Which empire built the Colosseum?",
-      choices: ["Roman Empire", "Ottoman Empire", "Persian Empire"],
-      correct: 0
-    },
-    {
-      text: "The Magna Carta was signed in which year?",
-      choices: ["1215", "1066", "1415"],
-      correct: 0
-    },
-    {
-      text: "Who discovered penicillin?",
-      choices: ["Louis Pasteur", "Marie Curie", "Alexander Fleming"],
-      correct: 2
-    },
-    {
-      text: "Which dynasty ruled China immediately before the Ming?",
-      choices: ["Song", "Yuan", "Tang"],
-      correct: 1
-    }
-  ];
+  {
+    text: "Which is the famous Vincent van Gogh painting?",
+    choices: ["Night Skies", "A Quiet Night", "The Starry Night"],
+    correct: 2
+  },
+  {
+    text: "Spanish painter Pablo Picasso had an era refered to as:",
+    choices: ["Yellow Period", "Purple Period", "Blue Period"],
+    correct: 2
+  },
+  {
+    text: "Which of the following paintings was painted by Salvador Dalí?",
+    choices: ["The Old Guitarist", "The Persistence of Memory", "Guernica"],
+    correct: 1
+  },
+  {
+    text: "Which artist created the famous \"The Scream\" painting?",
+    choices: ["Edvard Munch", "Andy Warhol", "Leonardo da Vinci"],
+    correct: 0
+  },
+  {
+    text:  "Which fruit did René Magritte famously use in his painting \"The Son of Man\" ?",
+    choices: [ "Banana", "Apple", "Orange"],
+    correct: 1
+  }
+];
 
   
   const questionTitle = document.getElementById('question-title');

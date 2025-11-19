@@ -2,32 +2,32 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
-    {
-      text: "Who was the first President of the United States?",
-      choices: ["John Adams", "George Washington", "Thomas Jefferson"],
-      correct: 1
-    },
-    {
-      text: "Which empire built the Colosseum?",
-      choices: ["Roman Empire", "Ottoman Empire", "Persian Empire"],
-      correct: 0
-    },
-    {
-      text: "The Magna Carta was signed in which year?",
-      choices: ["1215", "1066", "1415"],
-      correct: 0
-    },
-    {
-      text: "Who discovered penicillin?",
-      choices: ["Louis Pasteur", "Marie Curie", "Alexander Fleming"],
-      correct: 2
-    },
-    {
-      text: "Which dynasty ruled China immediately before the Ming?",
-      choices: ["Song", "Yuan", "Tang"],
-      correct: 1
-    }
-  ];
+  {
+    text: "Which country won the 2018 FIFA World Cup?",
+    choices: ["France", "Brazil", "Argentina"],
+    correct: 0
+  },
+  {
+    text: "How many players are on a basketball court per team?",
+    choices: ["5", "7", "9", "11"],
+    correct: 0
+  },
+  {
+    text: "In tennis, what is the term for 40–40?",
+    choices: ["Love", "Deuce", "Advantage"],
+    correct: 1
+  },
+  {
+    text: "Which sport uses a shuttlecock?",
+    choices: [ "Squash", "Table Tennis", "Badminton",],
+    correct: 2
+  },
+  {
+    text: "The Stanley Cup is awarded in which sport?",
+    choices: ["Ice Hockey", "Baseball", "American Football"],
+    correct: 0
+  }
+];
 
   
   const questionTitle = document.getElementById('question-title');

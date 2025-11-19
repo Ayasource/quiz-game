@@ -3,29 +3,29 @@ document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
     {
-      text: "Who was the first President of the United States?",
-      choices: ["John Adams", "George Washington", "Thomas Jefferson"],
+      text: "What is the capital city of Australia?",
+      choices: ["Sydney", "Canberra", "Melbourne"],
       correct: 1
     },
     {
-      text: "Which empire built the Colosseum?",
-      choices: ["Roman Empire", "Ottoman Empire", "Persian Empire"],
+      text: "The Sahara Desert is primarily located on which continent?",
+      choices: ["Africa", "Asia", "South America"],
       correct: 0
     },
     {
-      text: "The Magna Carta was signed in which year?",
-      choices: ["1215", "1066", "1415"],
-      correct: 0
-    },
-    {
-      text: "Who discovered penicillin?",
-      choices: ["Louis Pasteur", "Marie Curie", "Alexander Fleming"],
+      text: "Lake Como and Lake Garda are in which European country?",
+      choices: ["France", "Switzerland", "Italy"],
       correct: 2
     },
     {
-      text: "Which dynasty ruled China immediately before the Ming?",
-      choices: ["Song", "Yuan", "Tang"],
-      correct: 1
+      text: "Which country is known for having the most natural lakes?",
+      choices: ["Canada", "Russia", "United States"],
+      correct: 0
+    },
+    {
+      text: "Mount Kilimanjaro is located in which country??",
+      choices: ["Tanzania", "Kenya", "Uganda"],
+      correct: 0
     }
   ];
 
