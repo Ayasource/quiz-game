@@ -1,4 +1,20 @@
-# Quiz-game
+# Quiz game
+## Contents
+1. About this project
+2. User Stories
+3. Wireframes
+4. Website Iterations
+5. Code Development
+6. Working with Co-pilot
+7. Bugs
+8. Code Validators
+9. Features
+10. Accessibility
+11. Miscellaneous
+
+
+
+## About QuizMaster
 
 ## User Stories
 
@@ -153,9 +169,58 @@ Use JavaScript to alert the inviter when friends join.
 ![Stuart wireframe 1](assets/images/Stuart%20wireframe.png)
 ![Stuart wireframe 2](assets/images/Stuart%20wireframe%202.png)
 
-## Website
+## Website Iterations
 
-#### Website
+![Stuart front page v1](<assets/images/Stuart front page v1.png>)
+![Stuart front page v1 code](<assets/images/Stuart front page v1 code.png>)
+![Stuart front page v1 code 2](<assets/images/Stuart front page v1 code 2.png>)
+![Stuart front page v1 code 3](<assets/images/Stuart front page v1 code 3.png>)
+![Stuart front page v1 code 4](<assets/images/Stuart front page v1 code 4.png>)
 
+## Code Development
 
-#### Code
+### HTML
+
+![Stuart sport quiz v1 code](assets/images/Stuart%20sport%20quiz%20v1%20code%201.png)
+![Stuart sport quiz v1 code 2](<assets/images/Stuart sport quiz v1 code 2.png>)
+![Stuart sport quiz v1 code 3](<assets/images/Stuart sport quiz v1 code 3.png>)
+![Stuart sport quiz v1 code 4](<assets/images/Stuart sport quiz v1 code 4.png>)
+![Stuart sport quiz v1 code 5](<assets/images/Stuart sport quiz v1 code 5.png>)
+![Stuart sport quiz v1 code 6](<assets/images/Stuart sport quiz v1 code 6.png>)
+![Stuart sport quiz v1 code 7](<assets/images/Stuart sport quiz v1 code 7.png>)
+
+![Html code 1](<assets/images/Html code 1.png>)
+
+### CSS
+
+![Stuart css code 1](<assets/images/Stuart css code 1.png>)
+![Stuart css code 2](<assets/images/Stuart css code 2.png>)
+![Stuart css code 3](<assets/images/Stuart css code 3.png>)
+
+### JavaScript
+![JS code 1](<assets/images/JS code 1.png>)
+
+## Working with Co-pilot
+
+## Bugs
+![First merge conflict](<assets/images/First merge conflict.png>)
+
+## Code Validators
+
+## Accessibility
+
+### Lighthouse
+
+![Home page lighthouse 1](<assets/images/Home page lighthouse 1.png>)
+![About page lighthouse 1](<assets/images/About page lighthouse 1.png>)
+![Doc page lighthouse 1](<assets/images/Doc page lighthouse 1.png>)
+![Geography page lighthouse 1](<assets/images/Geography page lighthouse 1.png>)
+![History page lighthouse 1](<assets/images/History page lighthouse 1.png>)
+![Art page lighthouse 1](<assets/images/Art page lighthouse 1.png>)
+
+## Miscellaneous
+![quizmaster-favicon](assets/images/quizmaster-favicon.png)
+
+![geography1](assets/images/geography1.jpg)
+
+![quiz-logo](assets/bayan-images/quiz-logo.png)
