@@ -21,28 +21,16 @@
     </div>
   </header>
 
-  <main class="container" id="main" role="main">
-    <section id="intro" class="card" aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Welcome to QuizMaster</h2>
-      <p>Test your knowledge across categories. Use keyboard or mouse; everything is accessible. Click Start to begin.</p>
-      <div class="controls">
-        <label for="category-select">Category</label>
-        <select id="category-select" aria-label="Choose category">
-          <option value="any">Any / Mixed</option>
-          <option value="sports">Sports</option>
-          <option value="art">Art</option>
-          <option value="history">History</option>
-          <option value="geography">Geography</option>
-        </select>
+<main class="container main-layout">
+  
+  <!-- INTRO -->
+  <section id="intro" class="card">
+    <h2>Sports Quiz</h2>
+    <p>All questions are from sports. Press Start to play!</p>
 
-        <label for="timed-switch" class="timed-label">
-          <input id="timed-switch" type="checkbox" /> Timed quiz (30s per question)
-        </label>
-
-        <button id="start-btn" class="btn primary">Start Quiz</button>
-      </div>
-      <div id="greeting" class="greeting" aria-live="polite"></div>
-    </section>
+    <button id="start-btn" class="btn jumbo primary">Start Quiz</button>
+    <div id="greeting" aria-live="polite"></div>
+  </section>
 
     <section id="quiz-area" class="card hidden" aria-labelledby="question-heading" role="region">
       <header class="quiz-header">
