@@ -235,3 +235,20 @@ h1, h2, h3, h4 {
   transform: scale(1.2);
   opacity: 0.8;
 }
+
+/* ---------------------------- */
+/* GEOGRAPHY PAGE BACKGROUND   */
+/* ---------------------------- */
+body.geography-page {
+  background-image: url('../images/geography1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Slight translucent card so text remains readable over the image */
+body.geography-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
