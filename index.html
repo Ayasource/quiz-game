@@ -3,112 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>QuizMaster — Accessible Responsive Quiz</title>
-  <meta name="description" content="QuizMaster — single-page responsive accessible quiz app with score tracking and image feedback." />
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/quizmaster-favicon.png" />
+  <title>QuizMaster — Sports Quiz</title>
+  <meta name="description" content="QuizMaster — Sports-only demo quiz application." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/quizmaster-favicon.png">
 
-  <!-- Preload key fonts or assets if any (none here) -->
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">QuizMaster</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
-        </ul>
-        <form id="username-form" class="d-flex" role="search" aria-label="Set username">
-          <label for="username-input" class="visually-hidden">Username</label>
-          <input id="username-input" name="username" class="form-control me-2" type="text" placeholder="Username" maxlength="24" />
-          <button id="save-username" type="submit" class="btn btn-outline-success">Save</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <h1 class="logo">QuizMaster</h1>
 
-  <main class="container" id="main" role="main">
-    <section id="intro" class="card quiz-card shadow-sm" aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Welcome to QuizMaster</h2>
-      <p>Test your knowledge across categories. Use keyboard or mouse; everything is accessible. Click Start to begin.</p>
-      <div class="controls d-flex flex-wrap align-items-center">
-        <label for="category-select">Category</label>
-        <select id="category-select" aria-label="Choose category">
-          <option value="any">Any / Mixed</option>
-          <option value="sports">Sports</option>
-          <option value="movies">Movies</option>
-          <option value="literature">Literature</option>
-          <option value="personality">Personality</option>
-        </select>
+    <form id="username-form" aria-label="Set username">
+      <label class="visually-hidden" for="username-input">Username</label>
+      <input id="username-input" type="text" placeholder="Enter username" maxlength="24">
+      <button class="btn primary" id="save-username">Save</button>
+    </form>
+  </div>
+</header>
 
-        <label for="timed-switch" class="timed-label">
-          <input id="timed-switch" type="checkbox" /> Timed quiz (30s per question)
-        </label>
-
-        <div class="index-actions ms-2" role="list">
-          <a role="listitem" href="geography.html" class="circle-action btn-geo" id="geography-link" aria-label="Open Geography quiz" title="Play Geography">
-            <div class="circle" aria-hidden="true">🌍</div>
-            <div class="label">Geography</div>
-          </a>
-
-          <a role="listitem" href="arts.html" class="circle-action btn-arts" id="arts-link" aria-label="Open Arts quiz">
-            <div class="circle" aria-hidden="true">A</div>
-            <div class="label">Arts</div>
-          </a>
-
-          <a role="listitem" href="science.html" class="circle-action btn-science" id="science-link" aria-label="Open Science quiz">
-            <div class="circle" aria-hidden="true">S</div>
-            <div class="label">Science</div>
-          </a>
-
-          <a role="listitem" href="sports.html" class="circle-action btn-sports" id="sports-link" aria-label="Open Sports quiz">
-            <div class="circle" aria-hidden="true">⚽</div>
-            <div class="label">Sports</div>
-          </a>
-        </div>
-      </div>
-      <div id="greeting" class="greeting" aria-live="polite"></div>
-    </section>
-
+<main class="container main-layout">
   
-        </div>
-      </header>
+  <!-- INTRO -->
+  <section id="intro" class="card">
+    <h2>Sports Quiz</h2>
+    <p>All questions are from sports. Press Start to play!</p>
 
-      
-     
+    <button id="start-btn" class="btn jumbo primary">Start Quiz</button>
+    <div id="greeting" aria-live="polite"></div>
+  </section>
 
-    
-  </main>
+  <!-- QUIZ -->
+  <section id="quiz-area" class="card hidden">
+    <header class="quiz-header">
+      <h2 id="question-heading">Question</h2>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <small>QuizMaster • Demo app • Accessible and responsive</small>
-      <nav aria-label="Footer links">
-        <a href="about.html" id="about-link">About</a> |
-        <a href="Docs.html" id="Docs-link">Docs</a>
-      </nav>
+      <div class="status">
+        <div class="score-box"><strong>Score:</strong> <span id="score">0</span></div>
+        <div class="progress-box">Q <span id="q-index">0</span>/<span id="q-total">0</span></div>
+      </div>
+    </header>
+
+    <div id="question-panel">
+      <div id="question-text" class="q-text"></div>
+
+      <div id="choices" class="choices" role="radiogroup"></div>
+
+      <div class="action-row">
+        <button id="submit-btn" class="btn success" disabled>Submit</button>
+        <button id="skip-btn" class="btn danger ghost">Skip</button>
+      </div>
+
+      <div id="feedback" class="feedback" aria-live="assertive"></div>
     </div>
-  </footer>
+  </section>
 
-  <!-- Inline SVG templates for correct/incorrect feedback (kept in DOM for quick use) -->
-  <svg id="correct-svg" xmlns="http://www.w3.org/2000/svg" style="display:none" viewBox="0 0 120 120" aria-hidden="true">
-    <circle cx="60" cy="60" r="56" fill="#e6ffef" stroke="#15a574" stroke-width="4"/>
-    <path d="M35 63 L52 80 L85 40" fill="none" stroke="#0a7f50" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="60" y="102" fill="#0a7f50" font-size="10" text-anchor="middle">Correct!</text>
-  </svg>
+  <!-- RESULTS -->
+  <section id="results-area" class="card hidden">
+    <h2>Results</h2>
+    <p id="final-summary"></p>
 
-  <svg id="incorrect-svg" xmlns="http://www.w3.org/2000/svg" style="display:none" viewBox="0 0 120 120" aria-hidden="true">
-    <circle cx="60" cy="60" r="56" fill="#fff0f0" stroke="#d14b4b" stroke-width="4"/>
-    <path d="M40 40 L80 80 M80 40 L40 80" fill="none" stroke="#a12e2e" stroke-width="6" stroke-linecap="round"/>
-    <text x="60" y="102" fill="#a12e2e" font-size="10" text-anchor="middle">Incorrect</text>
-  </svg>
+    <div class="result-stats">
+      <p>Correct: <span id="final-correct">0</span></p>
+      <p>Incorrect: <span id="final-incorrect">0</span></p>
+      <p>Score: <strong id="final-score">0</strong></p>
+    </div>
 
-  <!-- Core script -->
-  <script defer src="js/app.js"></script>
+    <button id="retry-btn" class="btn jumbo primary">Play Again</button>
+  </section>
+
+  <!-- SIDEBAR -->
+  <aside class="card sidebar">
+    <h3>Sidebar</h3>
+    <p>Best Score: <span id="best-score">—</span></p>
+    <p>Username: <span id="saved-username">Guest</span></p>
+
+    <h4>Leaderboard</h4>
+    <ol id="leaderboard-list"></ol>
+  </aside>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+
+    <small>QuizMaster • Demo app • Accessible and responsive</small>
+
+    <nav class="social-links" aria-label="Social media">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="">
+      </a>
+
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="">
+      </a>
+
+      <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="">
+      </a>
+      <a href="about.html" id="about-link">About</a> |
+        <a href="docs.html" id="docs-link">Docs</a>
+    </nav>
+
+  </div>
+</footer>
+
+
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>
