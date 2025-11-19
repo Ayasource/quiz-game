@@ -165,6 +165,22 @@ body.geography-page .quiz-card {
 }
 
 /* ---------------------------- */
+/* ART PAGE BACKGROUND         */
+/* ---------------------------- */
+body.art-page {
+  background-image: url('../images/art-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.art-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
 /* Fixed header (top) and footer (bottom) */
 /* ---------------------------- */
 :root {
