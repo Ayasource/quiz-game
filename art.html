@@ -1,256 +1,94 @@
-      <!-- Old html -->
-         <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charhttps://github.com/Ayasource/quiz-game/pull/28/conflict?name=art.html&ancestor_oid=10205a29099aeb51ebc8cdc648a82066cdfad4cb&base_oid=1d1fb26a9c6cdd404db61ebb3f8b4c2747f99eb8&head_oid=4b3d562e651c0ffeba3baf15ac7692c3c945ee42set="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Art Quiz" />
-        <!-- bootstrap css -->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- css stylesheets -->
-      <link rel="stylesheet" href="assets/css/styles.css" />
-        <title>Art Quiz</title>
-    </head>
-    <body class="art-page">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">QuizMaster</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </nav>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuizMania — Art Quiz</title>
+  <meta name="description" content="Five-question art quiz" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-        <div class="container">
-          <h1 class="text-center mt-4">Art Quiz</h1>
-
-          <div class="card quiz-card shadow-sm">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div><strong>Category:</strong> Art</div>
-                <div>Score: <span id="score">0</span>/5</div>
-              </div>
-
-              <div id="questionCarousel" class="carousel slide" data-bs-interval="false">
-                <div class="carousel-inner">
-                  <!-- Question 1 -->
-                  <div class="carousel-item active">
-                    <div class="mb-3">
-                      <h5 class="card-title">1. Which is the famous Vincent van Gogh painting?</h5>
-                    </div>
-                    <div class="choices-form" data-index="0">
-                      <div class="choice-wrap" data-value="0">
-                        <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">Night Skies</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="1">
-                        <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">A Quiet Night</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="2">
-                        <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">The Starry Night</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="3">
-                        <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">The Starway</button>
-                    
-                      </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between">
-                      <button class="btn btn-secondary prev-btn" disabled>&larr; Prev</button>
-                      <div>
-                        <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Question 2 -->
-                  <div class="carousel-item">
-                    <div class="mb-3">
-                      <h5 class="card-title">2. Spanish painter Pablo Picasso had era refered to as: </h5>
-                    </div>
-                    <div class="choices-form" data-index="1">
-                      <div class="choice-wrap" data-value="0">
-                        <!-- Blue period -->
-                        <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">Blue period</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="1">
-                        <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">Yellow period</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="2">
-                        <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">Purple period</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="3">
-                        <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">Red period</button>
-                    
-                      </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between">
-                      <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                      <div>
-                        <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Question 3 -->
-                  <div class="carousel-item">
-                    <div class="mb-3">
-                      <h5 class="card-title">3. Which of the following paintings was painted by Salvador Dalí?</h5>
-                    </div>
-                    <div class="choices-form" data-index="2">
-                      <div class="choice-wrap" data-value="0">
-                        <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">The Old Guitarist</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="1">
-                        <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">The Starry Night</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="2">
-                        <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">The Mona Lisa</button>
-                        <!-- The Persistence of Memory -->
-                      </div>
-                      <div class="choice-wrap" data-value="3">
-                        <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">The Persistence of Memory</button>
-                    
-                      </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between">
-                      <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                      <div>
-                        <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Question 4 -->
-                  <div class="carousel-item">
-                    <div class="mb-3">
-                      <h5 class="card-title">4. Which artist created the famous "The Scream" painting?</h5>
-                    </div>
-                    <div class="choices-form" data-index="3">
-                      <div class="choice-wrap" data-value="0">
-                        <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">Andy Warhol</button>
-                        <!-- Edvard Munch -->
-                      </div>
-                      <div class="choice-wrap" data-value="1">
-                        <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">Edvard Munch</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="2">
-                        <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">Leonardo da Vinci</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="3">
-                        <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">Vivienne Westwood</button>
-                    
-                      </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between">
-                      <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                      <div>
-                        <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Question 5 -->
-                  <div class="carousel-item">
-                    <div class="mb-3">
-                      <h5 class="card-title">5. Which fruit did René Magritte famously use in his painting "The Son of Man" ?</h5>
-                    </div>
-                    <div class="choices-form" data-index="4">
-                      <div class="choice-wrap" data-value="0">
-                        <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A Banana</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="1">
-                        <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">An Orange</button>
-                        <!-- An apple -->
-                      </div>
-                      <div class="choice-wrap" data-value="2">
-                        <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">An Apple</button>
-                    
-                      </div>
-                      <div class="choice-wrap" data-value="3">
-                        <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">A Pear</button>
-                    
-                      </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between">
-                      <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                      <div>
-                        <button class="btn btn-success finish-btn" disabled id="finishBtn">Finish</button>
-                        <a href="leaderboard.html" class="btn btn-outline-primary ms-2 disabled" id="leaderboardLink" aria-disabled="true" tabindex="-1">See Leaderboard</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-indicators mt-3">
-                  <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Question 1"></button>
-                  <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="1" aria-label="Question 2"></button>
-                  <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="2" aria-label="Question 3"></button>
-                  <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="3" aria-label="Question 4"></button>
-                  <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="4" aria-label="Question 5"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>   
-   
+<body class="art-page">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
+        QuizMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+      </div>
     </div>
-  
+  </nav>
 
-</container>
+  <main>
+    <div class="container my-5">
+      <div class="row align-items-center mb-4">
+        <div class="col">
+          <h2 class="mb-0">ART</h2>
+        </div>
+        <div class="col-auto">
+          <div class="input-group">
+            <label class="input-group-text" for="category">Category</label>
+            <select class="form-select" id="category" aria-label="Category select">
+              <option value="history.html">History</option>
+              <option value="sports.html">Sports</option>
+              <option value="art.html" selected>Art</option>
+              <option value="geography.html">Geography</option>
+              <option value="index.html">Home</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-    </main>
- 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</script>
+      <div class="game-area">
+        <div class="card quiz-card" id="quiz-card" aria-live="polite">
+          <div class="card-body">
+            <h3 id="question-title" class="mb-3"></h3>
+            <div id="answers"></div>
+            <div class="d-flex align-items-center mt-3">
+              <div class="btn-group" role="group" aria-label="left-actions">
+                <button id="skip-question" class="btn btn-danger">Skip</button>
+              </div>
+              <button id="submit-answer" class="btn btn-primary ms-auto">Submit</button>
+            </div>
+            <div id="answer-feedback" class="mt-2" role="status" aria-live="assertive"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<footer class="site-footer" role="contentinfo">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-        <small>QuizMaster • Demo app • Accessible and responsive</small>
-        <nav class="social-links" aria-label="Social media">
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
-                <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
-                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram">
-            </a>
-            <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
-                <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="X">
-            </a>
-            <a href="about.html" id="about-link">About</a> |
-            <a href="docs.html" id="docs-link">Docs</a>
-        </nav>
+      <small>QuizMaster • Demo app • Accessible and responsive</small>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="X">
+        </a>
+        <a href="about.html" id="about-link">About</a> |
+        <a href="docs.html" id="docs-link">Docs</a>
+      </nav>
     </div>
-</footer>
+  </footer>
 
-<script src="assets/js/art.js"></script>
+  <script src="assets/js/art.js"></script>
 </body>
 </html>
