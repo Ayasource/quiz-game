@@ -2,32 +2,32 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
-    {
-      text: "What is the capital city of Australia?",
-      choices: ["Sydney", "Canberra", "Melbourne"],
-      correct: 1
-    },
-    {
-      text: "The Sahara Desert is primarily located on which continent?",
-      choices: ["Africa", "Asia", "South America"],
-      correct: 0
-    },
-    {
-      text: "Lake Como and Lake Garda are in which European country?",
-      choices: ["France", "Switzerland", "Italy"],
-      correct: 2
-    },
-    {
-      text: "Which country is known for having the most natural lakes?",
-      choices: ["Canada", "Russia", "United States"],
-      correct: 0
-    },
-    {
-      text: "Mount Kilimanjaro is located in which country??",
-      choices: ["Tanzania", "Kenya", "Uganda"],
-      correct: 0
-    }
-  ];
+  {
+    text: "Which country won the 2018 FIFA World Cup?",
+    choices: ["France", "Brazil", "Argentina"],
+    correct: 0
+  },
+  {
+    text: "How many players are on a basketball court per team?",
+    choices: ["5", "7", "9"],
+    correct: 0
+  },
+  {
+    text: "In tennis, what is the term for 40–40?",
+    choices: ["Love", "Deuce", "Advantage"],
+    correct: 1
+  },
+  {
+    text: "Which sport uses a shuttlecock?",
+    choices: [ "Squash", "Table Tennis", "Badminton",],
+    correct: 2
+  },
+  {
+    text: "The Stanley Cup is awarded in which sport?",
+    choices: ["Ice Hockey", "Baseball", "American Football"],
+    correct: 0
+  }
+];
 
   
   const questionTitle = document.getElementById('question-title');

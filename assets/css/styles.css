@@ -1,44 +1,39 @@
-/* ---------------------------- */
-/* GLOBAL                      */
-/* ---------------------------- */
+/* === BASIC RESETS === */
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: system-ui, Arial, sans-serif;
-  background: #f0f2f5;
   margin: 0;
-  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #333;
 }
 
+/* === LAYOUT === */
 .container {
-  width: 92%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: auto;
+  padding: 1rem;
 }
 
-.main-layout {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 1.5rem;
+.card {
+  background: #fff;
+  padding: 1.4rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 900px) {
-  .main-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-h1, h2, h3, h4 {
-  margin-top: 0;
-}
-
-/* ---------------------------- */
-/* HEADER                      */
-/* ---------------------------- */
-
+/* === HEADER === */
 .site-header {
-  background: #222;
-  color: white;
+  background: #293241;
+  color: #fff;
   padding: 1rem 0;
+}
+
+.logo {
+  margin: 0;
 }
 
 .header-inner {
@@ -47,174 +42,189 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
-.logo {
+/* Ensure navbar brand shows logo at left with proper spacing */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Navbar background and link color (light aqua) */
+.navbar {
+  background-color: #bff7f5 !important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text {
+  color: #03363a !important;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #01292b !important;
+}
+
+/* Footer: slightly darker aqua than navbar */
+.site-footer {
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
+  padding: 1rem 0.75rem;
+}
+.site-footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-footer small {
   margin: 0;
+  font-size: 0.95rem;
+}
+.site-footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.site-footer .social-links a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.site-footer .social-links img {
+  width: 24px;
+  height: 24px;
 }
 
-#username-input {
-  padding: 8px 12px;
+@media (max-width: 576px) {
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .site-footer .social-links {
+    justify-content: center;
+  }
+}
+
+.username-form input {
+  padding: 0.4rem 0.6rem;
   border-radius: 6px;
-  border: 1px solid #444;
-  background: #fff;
+  border: none;
 }
 
-/* ---------------------------- */
-/* CARDS                       */
-/* ---------------------------- */
-
-.card {
-  background: white;
-  padding: 1.4rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+/* === BUTTONS === */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #3d5afe;
+  color: #fff;
+  transition: 0.2s;
 }
 
+.btn.primary {
+  background: #2196f3;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Category buttons layout on index page */
+.category-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category-buttons .btn {
+  min-width: 110px;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Per-category colours */
+.btn-cat-geo { background: #dc3545; }
+.btn-cat-art { background: #6f42c1; }
+.btn-cat-history { background: #198754; }
+.btn-cat-sports { background: #0d6efd; }
+
+.btn-cat-geo:hover, .btn-cat-art:hover, .btn-cat-history:hover, .btn-cat-sports:hover {
+  filter: brightness(0.95);
+}
+
+.btn.ghost {
+  background: #ccc;
+  color: #333;
+}
+
+/* === QUIZ === */
 .hidden {
   display: none;
 }
 
-/* ---------------------------- */
-/* BUTTONS                     */
-/* ---------------------------- */
-
-.btn {
-  font-size: 1rem;
-  padding: 10px 18px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  transition: 0.15s ease;
-  font-weight: 600;
-  margin: 6px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+.question-heading {
+  margin-bottom: 0.5rem;
 }
 
-.jumbo {
-  padding: 14px 28px;
-  font-size: 1.2rem;
-}
-
-/* Button colors */
-.primary {
-  background: #2e7df6;
-  color: white;
-}
-
-.primary:hover {
-  background: #1f63ca;
-  transform: translateY(-2px);
-}
-
-/* Submit (success) */
-.success {
-  background: #27ae60;
-  color: white;
-}
-
-.success:hover {
-  background: #1d8b4c;
-  transform: translateY(-2px);
-}
-
-/* Danger / skip */
-.danger {
-  background: #e74c3c;
-  color: white;
-}
-
-.danger:hover {
-  background: #c0392b;
-}
-
-/* Ghost variant */
-.ghost {
-  background: transparent;
-  border: 2px solid currentColor;
-}
-
-/* Choices */
-.choice-btn {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  background: #f7f7f7;
-  border: 2px solid #ddd;
-  cursor: pointer;
-  transition: 0.18s ease;
-  font-size: 1rem;
-}
-
-.choice-btn:hover {
-  background: #e8f0ff;
-  border-color: #2e7df6;
-}
-
-.choice-btn.selected {
-  background: #d9e6ff;
-  border-color: #2e7df6;
-}
-
-/* ---------------------------- */
-/* QUIZ AREA                   */
-/* ---------------------------- */
-
-.quiz-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.q-text {
+.question-text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.choice-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.choice-item input {
+  margin-right: 10px;
+}
+
+/* === FEEDBACK === */
 .feedback {
   margin-top: 1rem;
   font-weight: bold;
 }
 
-/* ---------------------------- */
-/* SIDEBAR                     */
-/* ---------------------------- */
-
+/* === SIDEBAR === */
 .sidebar {
-  height: fit-content;
+  background: #fafafa;
 }
 
-.sidebar ol {
+.leaderboard ol {
   padding-left: 20px;
 }
 
-/* ---------------------------- */
-/* FOOTER                      */
-/* ---------------------------- */
-
+/* === FOOTER === */
+/* Final site-footer styling (keeps the darker aqua applied earlier) */
 .site-footer {
-  text-align: center;
-  padding: 1rem;
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
+  padding: 1rem 0;
   margin-top: 2rem;
-  color: #555;
-}
-
-.visually-hidden {
-  position: absolute;
-  left: -10000px;
-}
-.site-footer {
-  background: #111;
-  color: #fff;
-  padding: 24px 0;
-  margin-top: 40px;
-}
-
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
   text-align: center;
 }
 
@@ -252,3 +262,114 @@ body.geography-page .quiz-card {
   background-color: rgba(255,255,255,0.94);
   backdrop-filter: blur(2px);
 }
+
+/* ---------------------------- */
+/* ART PAGE BACKGROUND         */
+/* ---------------------------- */
+body.art-page {
+  background-image: url('../images/art-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.art-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* INDEX PAGE BACKGROUND       */
+/* ---------------------------- */
+body.index-page {
+  background-image: url('../images/questions-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.index-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* HISTORY PAGE BACKGROUND     */
+/* ---------------------------- */
+body.history-page {
+  background-image: url('../images/history-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.history-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* SPORTS PAGE BACKGROUND      */
+/* ---------------------------- */
+body.sports-page {
+  background-image: url('../images/sports-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.sports-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* Fixed header (top) and footer (bottom) */
+/* ---------------------------- */
+:root {
+  --nav-height: 72px;
+  --footer-height: 72px;
+}
+
+/* Pin header / bootstrap navbar to the top of the viewport */
+.site-header,
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--nav-height);
+  z-index: 1050;
+}
+
+/* Pin footer to the bottom */
+.site-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--footer-height);
+  z-index: 1040;
+}
+
+/* Ensure page content isn't hidden behind fixed header/footer */
+html, body {
+  padding-top: var(--nav-height);
+  padding-bottom: var(--footer-height);
+}
+
+/* Shadows for the fixed bars */
+.site-header, .navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.site-footer {
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+}
+
+
+
+        

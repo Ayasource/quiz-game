@@ -10,9 +10,122 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
     
+      <!-- Old html -->
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Bootstrap 5 CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    >
+    
+</head>
+
+<body class="history-page">
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
+                QuizMania
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+<div class="row align-items-center mb-4">
+    <div class="col">
+        <h2 class="mb-0">HISTORY</h2>
+    </div>
+    <div class="col-auto">
+        <div class="input-group">
+            <label class="input-group-text" for="category">Category</label>
+<select class="form-select" id="category" aria-label="Category select">
+  <option value="history.html" selected>History</option>
+  <option value="sports.html">Sports</option>
+  <option value="art.html">Art</option>
+  <option value="geography.html">Geography</option>
+  <option value="index.html">Home</option>
+</select>
+
+        </div>
+    </div>
+</div>
+<container class="game-area">
+
+  <div class="card quiz-card" id="quiz-card" aria-live="polite">
+    <div class="card-body">
+      <h3 id="question-title" class="mb-3"></h3>
+
+      <div id="answers"></div>
+            <!-- Action buttons -->
+       
+      <div class="d-flex align-items-center mt-3">
+        <div class="btn-group" role="group" aria-label="left-actions">
+         <button id="skip-question" class="btn btn-danger">Skip</button>
+       </div>
+        <button id="submit-answer" class="btn btn-primary ms-auto">Submit</button>
+      </div>
+
+      <!-- Feedback area for correct/incorrect -->
+      <div id="answer-feedback" class="mt-2" role="status" aria-live="assertive"></div>
+
+      </div>
+
+
+      
+
+    </div>
+  
+
+</container>
+
+    </main>
+ 
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="assets/js/history.js"></script>
+</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geography Quiz — 5 Questions</title>
+    <meta name="description" content="Five-question geography quiz implemented as a Bootstrap carousel card." />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    
 
   </head>
-  <body>
+  <body class="history-page">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
       <div class="container">
         <a class="navbar-brand" href="index.html">QuizMaster</a>
@@ -232,3 +345,22 @@
     
   </body>
 </html>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+    <small>QuizMaster • Demo app • Accessible and responsive</small>
+    <nav class="social-links" aria-label="Social media">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="X">
+      </a>
+      <a href="about.html" id="about-link">About</a> |
+      <a href="docs.html" id="docs-link">Docs</a>
+    </nav>
+  </div>
+</footer>
