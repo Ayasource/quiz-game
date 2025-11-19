@@ -44,16 +44,22 @@ body {
 
 /* Ensure navbar brand shows logo at left with proper spacing */
 .navbar-brand {
-  display: inline-flex;
+  display: flex;
+  /* center vertically and give a little vertical padding so the logo doesn't touch edges */
   align-items: center;
   gap: 0.6rem;
+  padding: 6px 0;
+  height: 100%;
 }
 
 .navbar-brand img {
-  width: 48px;
-  height: 48px;
+  /* Fit inside the navbar with comfortable padding; preserve aspect ratio */
+  max-height: calc(var(--nav-height) - 12px);
+  height: auto;
+  width: auto;
+  display: block;
   object-fit: contain;
-  display: inline-block;
+  margin: 0;
 }
 
 /* Navbar background and link color (light aqua) */
@@ -146,13 +152,33 @@ body {
   gap: 0.6rem;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .category-buttons .btn {
-  min-width: 110px;
-  padding: 0.6rem 0.9rem;
-  border-radius: 10px;
-  font-weight: 600;
+  /* Make the category buttons circular and ~20px bigger than previous min-width (110 -> 130) */
+  width: 130px;
+  height: 130px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  min-width: unset;
+}
+
+/* Slightly smaller circles on very small screens */
+@media (max-width: 576px) {
+  .category-buttons .btn {
+    width: 110px;
+    height: 110px;
+    font-size: 0.95rem;
+  }
 }
 
 /* Per-category colours */
@@ -283,16 +309,24 @@ body.art-page .quiz-card {
 /* INDEX PAGE BACKGROUND       */
 /* ---------------------------- */
 body.index-page {
-  background-image: url('../images/questions-image.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* Force the intended background and improve cache-override reliability */
+  background-image: url('../images/questions-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 body.index-page .quiz-card {
   background-color: rgba(255,255,255,0.94);
   backdrop-filter: blur(2px);
+}
+
+/* Mobile: avoid `background-attachment: fixed` (poor performance/behavior on phones) */
+@media (max-width: 768px) {
+  body.index-page {
+    background-attachment: scroll !important;
+  }
 }
 
 /* ---------------------------- */
