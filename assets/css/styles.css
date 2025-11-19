@@ -42,6 +42,20 @@ body {
   align-items: center;
 }
 
+/* Ensure navbar brand shows logo at left with proper spacing */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: inline-block;
+}
+
 .username-form input {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
