@@ -67,6 +67,31 @@ body {
   opacity: 0.85;
 }
 
+/* Category buttons layout on index page */
+.category-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category-buttons .btn {
+  min-width: 110px;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Per-category colours */
+.btn-cat-geo { background: #dc3545; }
+.btn-cat-art { background: #6f42c1; }
+.btn-cat-history { background: #198754; }
+.btn-cat-sports { background: #0d6efd; }
+
+.btn-cat-geo:hover, .btn-cat-art:hover, .btn-cat-history:hover, .btn-cat-sports:hover {
+  filter: brightness(0.95);
+}
+
 .btn.ghost {
   background: #ccc;
   color: #333;
@@ -163,3 +188,114 @@ body.geography-page .quiz-card {
   background-color: rgba(255,255,255,0.94);
   backdrop-filter: blur(2px);
 }
+
+/* ---------------------------- */
+/* ART PAGE BACKGROUND         */
+/* ---------------------------- */
+body.art-page {
+  background-image: url('../images/art-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.art-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* INDEX PAGE BACKGROUND       */
+/* ---------------------------- */
+body.index-page {
+  background-image: url('../images/questions-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.index-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* HISTORY PAGE BACKGROUND     */
+/* ---------------------------- */
+body.history-page {
+  background-image: url('../images/history-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.history-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* SPORTS PAGE BACKGROUND      */
+/* ---------------------------- */
+body.sports-page {
+  background-image: url('../images/sports-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.sports-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
+/* Fixed header (top) and footer (bottom) */
+/* ---------------------------- */
+:root {
+  --nav-height: 72px;
+  --footer-height: 72px;
+}
+
+/* Pin header / bootstrap navbar to the top of the viewport */
+.site-header,
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--nav-height);
+  z-index: 1050;
+}
+
+/* Pin footer to the bottom */
+.site-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--footer-height);
+  z-index: 1040;
+}
+
+/* Ensure page content isn't hidden behind fixed header/footer */
+html, body {
+  padding-top: var(--nav-height);
+  padding-bottom: var(--footer-height);
+}
+
+/* Shadows for the fixed bars */
+.site-header, .navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.site-footer {
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+}
+
+
+
+        
