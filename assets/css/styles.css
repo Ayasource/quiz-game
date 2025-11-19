@@ -67,6 +67,31 @@ body {
   opacity: 0.85;
 }
 
+/* Category buttons layout on index page */
+.category-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category-buttons .btn {
+  min-width: 110px;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Per-category colours */
+.btn-cat-geo { background: #dc3545; }
+.btn-cat-art { background: #6f42c1; }
+.btn-cat-history { background: #198754; }
+.btn-cat-sports { background: #0d6efd; }
+
+.btn-cat-geo:hover, .btn-cat-art:hover, .btn-cat-history:hover, .btn-cat-sports:hover {
+  filter: brightness(0.95);
+}
+
 .btn.ghost {
   background: #ccc;
   color: #333;
