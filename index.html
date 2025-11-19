@@ -37,72 +37,28 @@
     </div>
   </nav>
 
-  <main class="container main-layout">
-
-  <!-- INTRO -->
-  <section id="intro" class="card quiz-card">
-    <h2>Welcome to QuizMania</h2>
-    <p>All questions are from various categories. Click a category to play.</p>
-
-    <div class="category-buttons mt-3">
-      <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo btn-cat-geo">Geography</button>
-      <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo btn-cat-art">Art</button>
-      <button id="start-history-btn" onclick="location.href='history.html'" class="btn jumbo btn-cat-history">History</button>
-      <button id="start-sports-btn" onclick="location.href='sports.html'" class="btn jumbo btn-cat-sports">Sports</button>
-    </div>
-    <div id="greeting" aria-live="polite"></div>
-  </section>
-
-  <!-- QUIZ -->
-  <section id="quiz-area" class="card quiz-card hidden">
-    <header class="quiz-header">
-      <h2 id="question-heading">Question</h2>
-
-      <div class="status">
-        <div class="score-box"><strong>Score:</strong> <span id="score">0</span></div>
-        <div class="progress-box">Q <span id="q-index">0</span>/<span id="q-total">0</span></div>
-      </div>
-    </header>
-
-    <div id="question-panel">
-      <div id="question-text" class="q-text"></div>
-
-      <div id="choices" class="choices" role="radiogroup"></div>
-
-      <div class="action-row">
-        <button id="submit-btn" class="btn success" disabled>Submit</button>
-        <button id="skip-btn" class="btn danger ghost">Skip</button>
+  <main>
+    <div class="container my-5">
+      <div class="row align-items-center mb-4">
+        <div class="col">
+          <h2 class="mb-0">Welcome to QuizMania</h2>
+        </div>
       </div>
 
-      <div id="feedback" class="feedback" aria-live="assertive"></div>
+      <div class="card quiz-card">
+        <div class="card-body">
+          <p>All questions are from various categories. Click a category to play.</p>
+          <div class="category-buttons mt-3">
+            <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo btn-cat-geo">Geography</button>
+            <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo btn-cat-art">Art</button>
+            <button id="start-history-btn" onclick="location.href='history.html'" class="btn jumbo btn-cat-history">History</button>
+            <button id="start-sports-btn" onclick="location.href='sports.html'" class="btn jumbo btn-cat-sports">Sports</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <!-- RESULTS -->
-  <section id="results-area" class="card quiz-card hidden">
-    <h2>Results</h2>
-    <p id="final-summary"></p>
-
-    <div class="result-stats">
-      <p>Correct: <span id="final-correct">0</span></p>
-      <p>Incorrect: <span id="final-incorrect">0</span></p>
-      <p>Score: <strong id="final-score">0</strong></p>
-    </div>
-
-    <button id="retry-btn" class="btn jumbo primary">Play Again</button>
-  </section>
-
-  <!-- SIDEBAR -->
-  <aside class="card quiz-card sidebar">
-    <h3>Sidebar</h3>
-    <p>Best Score: <span id="best-score">—</span></p>
-    <p>Username: <span id="saved-username">Guest</span></p>
-
-    <h4>Leaderboard</h4>
-    <ol id="leaderboard-list"></ol>
-  </aside>
-
-</main>
+  </main>
 
 <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
