@@ -219,9 +219,10 @@ body {
 }
 
 /* === FOOTER === */
+/* Final site-footer styling (keeps the darker aqua applied earlier) */
 .site-footer {
-  background: #293241;
-  color: #fff;
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
   padding: 1rem 0;
   margin-top: 2rem;
   text-align: center;
