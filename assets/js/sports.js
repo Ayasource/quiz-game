@@ -3,29 +3,29 @@ document.addEventListener('DOMContentLoaded', function () {
   // Questions array: 5 questions, each with 3 choices
   const quizData = [
   {
-    text: "Which is the famous Vincent van Gogh painting?",
-    choices: ["Night Skies", "A Quiet Night", "The Starry Night"],
-    correct: 2
-  },
-  {
-    text: "Spanish painter Pablo Picasso had an era refered to as:",
-    choices: ["Yellow Period", "Purple Period", "Blue Period"],
-    correct: 2
-  },
-  {
-    text: "Which of the following paintings was painted by Salvador Dalí?",
-    choices: ["The Old Guitarist", "The Persistence of Memory", "Guernica"],
-    correct: 1
-  },
-  {
-    text: "Which artist created the famous \"The Scream\" painting?",
-    choices: ["Edvard Munch", "Andy Warhol", "Leonardo da Vinci"],
+    text: "Which country won the 2018 FIFA World Cup?",
+    choices: ["France", "Brazil", "Argentina"],
     correct: 0
   },
   {
-    text:  "Which fruit did René Magritte famously use in his painting \"The Son of Man\" ?",
-    choices: [ "Banana", "Apple", "Orange"],
+    text: "How many players are on a basketball court per team?",
+    choices: ["5", "7", "9"],
+    correct: 0
+  },
+  {
+    text: "In tennis, what is the term for 40–40?",
+    choices: ["Love", "Deuce", "Advantage"],
     correct: 1
+  },
+  {
+    text: "Which sport uses a shuttlecock?",
+    choices: [ "Squash", "Table Tennis", "Badminton",],
+    correct: 2
+  },
+  {
+    text: "The Stanley Cup is awarded in which sport?",
+    choices: ["Ice Hockey", "Baseball", "American Football"],
+    correct: 0
   }
 ];
 
