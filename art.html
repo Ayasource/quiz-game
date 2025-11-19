@@ -1,21 +1,99 @@
-<!doctype html>
+      <!-- Old html -->
+         <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Art Quiz" />
-    <!-- bootstrap css -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<!-- css stylesheets -->
-    <title>Art Quiz</title>
+    <title>Document</title>
+        <!-- Bootstrap 5 CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    >
+    
 </head>
+
 <body>
-     
-   
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
+                QuizMania
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+<div class="row align-items-center mb-4">
+    <div class="col">
+        <h2 class="mb-0">ART</h2>
+    </div>
+    <div class="col-auto">
+        <div class="input-group">
+            <label class="input-group-text" for="category">Category</label>
+<select class="form-select" id="category" aria-label="Category select">
+  <option value="history.html">History</option>
+  <option value="sports.html" selected>Sports</option>
+  <option value="art.html">Art</option>
+  <option value="geography.html" >Geography</option>
+  <option value="index.html">Home</option>
+</select>
+
+        </div>
+    </div>
 </div>
-<!-- bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<!-- js -->
-<script></script>
+<container class="game-area">
+
+  <div class="card quiz-card" id="quiz-card" aria-live="polite">
+    <div class="card-body">
+      <h3 id="question-title" class="mb-3"></h3>
+
+      <div id="answers"></div>
+            <!-- Action buttons -->
+       
+      <div class="d-flex align-items-center mt-3">
+        <div class="btn-group" role="group" aria-label="left-actions">
+         <button id="skip-question" class="btn btn-danger">Skip</button>
+       </div>
+        <button id="submit-answer" class="btn btn-primary ms-auto">Submit</button>
+      </div>
+
+      <!-- Feedback area for correct/incorrect -->
+      <div id="answer-feedback" class="mt-2" role="status" aria-live="assertive"></div>
+
+      </div>
+
+
+      
+
+    </div>
+  
+
+</container>
+
+    </main>
+ 
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="assets/js/art.js"></script>
 </body>
 </html>
