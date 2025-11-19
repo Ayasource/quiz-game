@@ -70,6 +70,51 @@ body {
   color: #01292b !important;
 }
 
+/* Footer: slightly darker aqua than navbar */
+.site-footer {
+  background-color: #9deee8; /* darker aqua */
+  color: #01292b;
+  padding: 1rem 0.75rem;
+}
+.site-footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-footer small {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.site-footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.site-footer .social-links a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.site-footer .social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 576px) {
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .site-footer .social-links {
+    justify-content: center;
+  }
+}
+
 .username-form input {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
