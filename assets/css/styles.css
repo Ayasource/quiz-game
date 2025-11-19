@@ -197,6 +197,22 @@ body.index-page .quiz-card {
 }
 
 /* ---------------------------- */
+/* HISTORY PAGE BACKGROUND     */
+/* ---------------------------- */
+body.history-page {
+  background-image: url('../images/history-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.history-page .quiz-card {
+  background-color: rgba(255,255,255,0.94);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------- */
 /* Fixed header (top) and footer (bottom) */
 /* ---------------------------- */
 :root {
