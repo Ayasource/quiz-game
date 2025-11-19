@@ -3,42 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>QuizMaster — Sports Quiz</title>
-  <meta name="description" content="QuizMaster — Sports-only demo quiz application." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>QuizMania</title>
+  <meta name="description" content="QuizMania — Sports-only demo quiz application." />
+    <!-- Bootstrap CSS (match geography page) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" type="image/png" href="assets/images/quizmaster-favicon.png">
 
 </head>
 
-<body>
-<header class="site-header">
-  <div class="container header-inner">
-    <h1 class="logo">QuizMaster</h1>
-
-    <form id="username-form" aria-label="Set username">
-      <label class="visually-hidden" for="username-input">Username</label>
-      <input id="username-input" type="text" placeholder="Enter username" maxlength="24">
-      <button class="btn primary" id="save-username">Save</button>
-    </form>
-  </div>
-</header>
+<body class="index-page">
+  <!-- Navigation Bar (from geography.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
+        QuizMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <main class="container main-layout">
   
   <!-- INTRO -->
-  <section id="intro" class="card">
+  <section id="intro" class="card quiz-card">
     <h2>Sports Quiz</h2>
     <p>All questions are from sports. Press Start to play!</p>
 
     <button id="start-btn" class="btn jumbo primary">Start Quiz</button>
-    <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo primary">Geography</button>
-    <button id="start-history-btn" onclick="location.href='history.html'" class="btn jumbo primary">History</button>
-    <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo primary">Art</button>
+    <div class="category-buttons mt-3">
+      <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo btn-cat-geo">Geography</button>
+      <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo btn-cat-art">Art</button>
+      <button id="start-history-btn" onclick="location.href='history.html'" class="btn jumbo btn-cat-history">History</button>
+      <button id="start-sports-btn" onclick="location.href='sports.html'" class="btn jumbo btn-cat-sports">Sports</button>
+    </div>
     <div id="greeting" aria-live="polite"></div>
   </section>
 
   <!-- QUIZ -->
-  <section id="quiz-area" class="card hidden">
+  <section id="quiz-area" class="card quiz-card hidden">
     <header class="quiz-header">
       <h2 id="question-heading">Question</h2>
 
@@ -63,7 +80,7 @@
   </section>
 
   <!-- RESULTS -->
-  <section id="results-area" class="card hidden">
+  <section id="results-area" class="card quiz-card hidden">
     <h2>Results</h2>
     <p id="final-summary"></p>
 
@@ -77,7 +94,7 @@
   </section>
 
   <!-- SIDEBAR -->
-  <aside class="card sidebar">
+  <aside class="card quiz-card sidebar">
     <h3>Sidebar</h3>
     <p>Best Score: <span id="best-score">—</span></p>
     <p>Username: <span id="saved-username">Guest</span></p>
@@ -112,8 +129,8 @@
   </div>
 </footer>
 
-
-
-<script src="assets/js/app.js"></script>
+<!-- Bootstrap JS bundle (for navbar, modals, carousel etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
