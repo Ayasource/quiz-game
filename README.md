@@ -195,6 +195,28 @@ Use JavaScript to alert the inviter when friends join.
 ![About page v2](<assets/images/About page v2.png>)
 ![Doc page v2](<assets/images/Doc page v2.png>)
 
+### Website v3
+
+![Home page v3](<assets/images/Home page v3.png>)
+![Geography page v3](<assets/images/Geography page v3.png>)
+![Art page v3](<assets/images/Art page v3.png>)
+![History page v3](<assets/images/History page v3.png>)
+![Sports page v3](<assets/images/Sports page v3.png>)
+![About page v3](<assets/images/About page v3.png>)
+![Doc page v3](<assets/images/Doc page v3.png>)
+![Leaderboard page v1](assets/images/Leaderboard%20page%20v1.png)
+### Website v4
+
+![Home page v4](assets/images/Home%20page%20v4.png)
+![Geography page v4](<assets/images/Geography page v4.png>)
+![Art page v4](<assets/images/Art page v4.png>)
+![History page v4](<assets/images/History page v4.png>)
+![Sports page v4](<assets/images/Sports page v4.png>)
+![About page v3](<assets/images/About page v3.png>)
+![Doc page v3](<assets/images/Doc page v3.png>)
+![Leaderboard page v2](<assets/images/Leaderboard page v2.png>)
+![Quiz end screen](<assets/images/Quiz end screen.png>)
+
 ## Code Development
 
 ### HTML
@@ -225,8 +247,20 @@ Use JavaScript to alert the inviter when friends join.
 
 ![Art page v2 bug](<assets/images/Art page v2 bug.png>)
 
+![Home page v3 bug](<assets/images/Home page v3 bug.png>)
+
+![Geography page v4 bug](<assets/images/Geography page v4 bug.png>)
+
+![Home page v4 bug](<assets/images/Home page v4 bug.png>)
+
+
 ## Code Validators
 
+## Features
+![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
+![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
+![Score example](<assets/images/Score example.png>)
+![Score example 2](<assets/images/Score example 2.png>)
 ## Accessibility
 
 ### Lighthouse
@@ -256,7 +290,45 @@ Use JavaScript to alert the inviter when friends join.
 ![History page Desktop lighthouse v1](<assets/images/History page Desktop lighthouse v1.png>)
 ![Sports page Desktop lighthouse v1](<assets/images/Sports page Desktop lighthouse v1.png>)
 
+#### 3
 
+![Home page lighthouse v3](<assets/images/Home page lighthouse v3.png>)
+![Geography page lighthouse v3](<assets/images/Geography page lighthouse v3.png>)
+![Art page lighthouse v3](<assets/images/Art page lighthouse v3.png>)
+![History page lighthouse v3](<assets/images/History page lighthouse v3.png>)
+![Sports page lighthouse v3](assets/images/Sports%20page%20lighthouse%20v3.png)
+![About page lighthouse v3](<assets/images/About page lighthouse v3.png>)
+![Doc page lighthouse v3](<assets/images/Doc page lighthouse v3.png>)
+![Leaderboard page lighthouse v1](<assets/images/Leaderboard page lighthouse v1.png>)
+#### Desktop 2
+
+![Home page Desktop lighthouse v2](assets/images/Home%20page%20Desktop%20lighthouse%20v2.png)
+![Geography page Desktop lighthouse v2](<assets/images/Geography page Desktop lighthouse v2.png>)
+![Art page Desktop lighthouse v2](<assets/images/Art page Desktop lighthouse v2.png>)
+![History page Desktop lighthouse v2](<assets/images/History page Desktop lighthouse v2.png>)
+![Sports page Desktop lighthouse v2](<assets/images/Sports page Desktop lighthouse v2.png>)
+
+#### 4
+
+![Home page lighthouse v4](<assets/images/Home page lighthouse v4.png>)
+![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
+![Art page lighthouse v4](<assets/images/Art page lighthouse v4.png>)
+![History page lighthouse v4](<assets/images/History page lighthouse v4.png>)
+![Sports page lighthouse v4](<assets/images/Sports page lighthouse v4.png>)
+![Leaderboard page lighthouse v2](<assets/images/Leaderboard page lighthouse v2.png>)
+#### Desktop 3
+
+![Home page Desktop lighthouse v3](<assets/images/Home page Desktop lighthouse v3.png>)
+![Geography page Desktop lighthouse v3](<assets/images/Geography page Desktop lighthouse v3.png>)
+![Art page Desktop lighthouse v3](assets/images/Art%20page%20Desktop%20lighthouse%20v3.png)
+![History page Desktop lighthouse v4](assets/images/History%20page%20Desktop%20lighthouse%20v4.png)
+![Sports page Desktop lighthouse v3](<assets/images/Sports page Desktop lighthouse v3.png>)
+![About page Desktop lighthouse v3](<assets/images/About page Desktop lighthouse v3.png>)
+![Doc page Desktop lighthouse v3](<assets/images/Doc page Desktop lighthouse v3.png>)
+![Leaderboard page Desktop lighthouse v1](assets/images/Leaderboard%20page%20Desktop%20lighthouse%20v1.png)
+#### Desktop 4
+![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
+![Leaderboard page Desktop lighthouse v2](<assets/images/Leaderboard page Desktop lighthouse v2.png>)
 
 ## Miscellaneous
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
