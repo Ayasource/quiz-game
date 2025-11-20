@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="leaderboard.html">Leaderboard</a>
@@ -53,13 +53,13 @@
     <div class="container my-5">
       <div class="row align-items-center mb-4">
         <div>
-          <h2 class="mb-0 heading">Welcome to QuizMania</h2>
+          <h2 class="mb-0 heading" id="home-heading">Welcome to QuizMania</h2>
         </div>
       </div>
 
-      <div class="card quiz-card">
+      <div class="card quiz-card" id="home-card">
         <div class="card-body">
-          <p>All questions are from various categories. Click a category to play.</p>
+          <p class="text-center"> Click a category to start playing!</p>
           <div class="category-buttons mt-3">
             <button id="start-geography-btn" onclick="location.href='geography.html'" class="btn jumbo btn-cat-geo">Geography</button>
             <button id="start-art-btn" onclick="location.href='art.html'" class="btn jumbo btn-cat-art">Art</button>
@@ -75,7 +75,7 @@
 <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
 
-    <small>QuizMaster • Demo app • Accessible and responsive</small>
+    <small>QuizMaster • Demo app </small>
 
     <nav class="social-links" aria-label="Social media">
       <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
@@ -89,8 +89,7 @@
       <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
         <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="">
       </a>
-      <a href="about.html" id="about-link">About</a> |
-        <a href="docs.html" id="docs-link">Docs</a>
+      
     </nav>
 
   </div>
