@@ -320,7 +320,7 @@ body.art-page .quiz-card {
 /* ---------------------------- */
 body.index-page {
   /* Force the intended background and improve cache-override reliability */
-  background-image: url('../images/questions-image.jpg') !important;
+  background-image: url('../bayan-images/cartoon-question-marks.jpg') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
