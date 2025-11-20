@@ -246,6 +246,7 @@ Use JavaScript to alert the inviter when friends join.
 
 ![Home page v4 bug](<assets/images/Home page v4 bug.png>)
 
+![home page bug v6](<assets/images/home page bug v6.png>)
 
 ## Code Validators
 
@@ -306,6 +307,34 @@ Use JavaScript to alert the inviter when friends join.
 
 ## Responsive
 
+### Home 
+
+![Responsive home page 1](assets/images/Responsive%20home%20page%201.png)
+![Responsive home page 2](<assets/images/Responsive home page 2.png>)
+![Responsive home page 3](<assets/images/Responsive home page 3.png>)
+
+### Geography
+
+![Responsive geography page 1](<assets/images/Responsive geography page 1.png>)
+![Responsive geography page 2](<assets/images/Responsive geography page 2.png>)
+![Responsive geography page 3](<assets/images/Responsive geography page 3.png>)
+
+### Art
+
+![Responsive art page 1](<assets/images/Responsive art page 1.png>)
+![Responsive art page 2](<assets/images/Responsive art page 2.png>)
+![Responsive art page 3](<assets/images/Responsive art page 3.png>)
+
+### History
+
+![Responsive history page 1](<assets/images/Responsive history page 1.png>)
+![Responsive history page 2](<assets/images/Responsive history page 2.png>)
+![Responsive history page 3](<assets/images/Responsive history page 3.png>)
+
+### Sports
+
+![Responsive sports page 1](<assets/images/Responsive sports page 1.png>)
+![Responsive sports page 2](<assets/images/Responsive sports page 2.png>)
 ## Accessibility
 
 ### Lighthouse
@@ -371,9 +400,21 @@ Use JavaScript to alert the inviter when friends join.
 ![About page Desktop lighthouse v3](<assets/images/About page Desktop lighthouse v3.png>)
 ![Doc page Desktop lighthouse v3](<assets/images/Doc page Desktop lighthouse v3.png>)
 ![Leaderboard page Desktop lighthouse v1](assets/images/Leaderboard%20page%20Desktop%20lighthouse%20v1.png)
+
+### 5
+
 #### Desktop 4
+
 ![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
 ![Leaderboard page Desktop lighthouse v2](<assets/images/Leaderboard page Desktop lighthouse v2.png>)
+
+### 6
+![Home page lighthouse v6](<assets/images/Home page lighthouse v6.png>)
+#### Desktop 5
+![Home page Desktop lighthouse v5](<assets/images/Home page Desktop lighthouse v6.png>)
+
+#### Desktop 6
+
 
 ## Miscellaneous
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
