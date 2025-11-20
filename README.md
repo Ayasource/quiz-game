@@ -419,6 +419,7 @@ Use JavaScript to alert the inviter when friends join.
 ![Geography page lighthouse v5](<assets/images/Geography page lighthouse v5.png>)
 ![History page lighthouse v5](<assets/images/History page lighthouse v5.png>)
 ![Sports page lighthouse v5](<assets/images/Sports page lighthouse v5.png>)
+![Home page lighthouse v5](assets/images/Home%20page%20lighthouse%20v5.png)
 #### Desktop 4
 
 ![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
@@ -437,7 +438,7 @@ Use JavaScript to alert the inviter when friends join.
 ![Sports page Desktop lighthouse v5](<assets/images/Sports page Desktop lighthouse v5.png>)
 
 #### Desktop 6
-
+![Home page Desktop lighthouse v5](<assets/images/Home page Desktop lighthouse v5.png>)
 
 ## Miscellaneous
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
