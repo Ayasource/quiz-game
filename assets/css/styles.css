@@ -37,6 +37,32 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+#home-heading{
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+#home-card {
+  /* translucent #ffb100 tint */
+  background-color: rgba(255, 177, 0, 0.10); /* adjust alpha 0.02–0.20 to taste */
+
+  /* frosted glass blur (graceful fallback: browsers that don't support backdrop-filter will ignore it) */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* soft aqua border and rounded corners */
+  border: 1px solid rgba(13, 16, 16, 0.45);
+  border-radius: 10px;
+
+  /* spacing and depth */
+  padding: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+  /* small interactive polish */
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 120ms ease;
+}
 /* === HEADER === */
 .site-header {
   background: #293241;
@@ -172,9 +198,12 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   min-width: unset;
+  color: #000000;
+  border: #000000 2px solid;
+
 }
 
 /* Slightly smaller circles on very small screens */
@@ -192,14 +221,16 @@ body {
 .btn-cat-history { background: #198754; }
 .btn-cat-sports { background: #0d6efd; }
 
-.btn-cat-geo:hover, .btn-cat-art:hover, .btn-cat-history:hover, .btn-cat-sports:hover {
-  filter: brightness(0.95);
-}
+/* Hover effects */
 
-.btn.ghost {
-  background: #ccc;
-  color: #333;
-}
+.btn-cat-geo:hover    { background-color: rgba(220, 53,  69,  0.85);
+border:none; } 
+.btn-cat-art:hover    { background-color: rgba(111, 66,  193, 0.85);
+border: none; } 
+.btn-cat-history:hover{ background-color: rgba(25,  135, 84,  0.85);
+border: none; } 
+.btn-cat-sports:hover { background-color: rgba(13,  110, 253, 0.85);
+border: none; } 
 
 /* === QUIZ === */
 .hidden {
@@ -327,10 +358,7 @@ body.index-page {
   background-attachment: fixed !important;
 }
 
-body.index-page .quiz-card {
-  background-color: rgba(255,255,255,0.94);
-  backdrop-filter: blur(2px);
-}
+
 
 /* Mobile: avoid `background-attachment: fixed` (poor performance/behavior on phones) */
 @media (max-width: 768px) {
@@ -440,4 +468,5 @@ html, body {
     padding: 0.5rem 0.75rem;
   }
 }
-        
+       
+
