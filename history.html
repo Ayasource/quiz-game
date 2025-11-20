@@ -1,366 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Geography Quiz — 5 Questions</title>
-    <meta name="description" content="Five-question geography quiz implemented as a Bootstrap carousel card." />
+    <meta
+      name="description"
+      content="Five-question geography quiz implemented as a Bootstrap carousel card."
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    
-      <!-- Old html -->
-         <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- Bootstrap 5 CSS-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    >
-    
-</head>
-
-<body class="history-page">
-        <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/bayan-images/quiz-logo.png" alt="Logo" width="60" height="60">
-                QuizMania
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <div class="container my-5">
-<div class="row align-items-center mb-4">
-    <div class="col">
-        <h2 class="mb-0">HISTORY</h2>
-    </div>
-    <div class="col-auto">
-        <div class="input-group">
-            <label class="input-group-text" for="category">Category</label>
-<select class="form-select" id="category" aria-label="Category select">
-  <option value="history.html" selected>History</option>
-  <option value="sports.html">Sports</option>
-  <option value="art.html">Art</option>
-  <option value="geography.html">Geography</option>
-  <option value="index.html">Home</option>
-</select>
-
-        </div>
-    </div>
-</div>
-<container class="game-area">
-
-  <div class="card quiz-card" id="quiz-card" aria-live="polite">
-    <div class="card-body">
-      <h3 id="question-title" class="mb-3"></h3>
-
-      <div id="answers"></div>
-            <!-- Action buttons -->
-       
-      <div class="d-flex align-items-center mt-3">
-        <div class="btn-group" role="group" aria-label="left-actions">
-         <button id="skip-question" class="btn btn-danger">Skip</button>
-       </div>
-        <button id="submit-answer" class="btn btn-primary ms-auto">Submit</button>
-      </div>
-
-      <!-- Feedback area for correct/incorrect -->
-      <div id="answer-feedback" class="mt-2" role="status" aria-live="assertive"></div>
-
-      </div>
-
-
-      
-
-    </div>
-  
-
-</container>
-
-    </main>
- 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-<script src="assets/js/history.js"></script>
-</body>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Geography Quiz — 5 Questions</title>
-    <meta name="description" content="Five-question geography quiz implemented as a Bootstrap carousel card." />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    
-
   </head>
+
   <body class="history-page">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
       <div class="container">
-        <a class="navbar-brand" href="index.html">QuizMaster</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/bayan-images/quiz-logo-Photoroom.png"
+            alt="Logo"
+            width="60"
+            height="60"
+          />
+          QuizMania
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <h1 class="text-center mt-4">History Quiz</h1>
-
-      <div class="card quiz-card shadow-sm">
-        <div class="card-body">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <div><strong>Category:</strong> History</div>
-            <div>Score: <span id="score">0</span>/5</div>
+    <main>
+      <div class="container">
+        <div class="row align-items-center mb-2 container">
+          <div class="col">
+            <h2 class="mb-0 heading">HISTORY</h2>
           </div>
-
-          <div id="questionCarousel" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner">
-              <!-- Question 1 -->
-              <div class="carousel-item active">
-                <div class="mb-3">
-                  <h5 class="card-title">1. Who was the first President of the United States?</h5>
-                </div>
-                <div class="choices-form" data-index="0">
-                  <div class="choice-wrap" data-value="0">
-                    <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A</button>
-                    <div class="choice-text">John Adams</div>
-                  </div>
-                  <div class="choice-wrap" data-value="1">
-                    <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">B</button>
-                    <div class="choice-text">George Washington</div>
-                  </div>
-                  <div class="choice-wrap" data-value="2">
-                    <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">C</button>
-                    <div class="choice-text">Thomas Jefferson</div>
-                  </div>
-                  <div class="choice-wrap" data-value="3">
-                    <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">D</button>
-                    <div class="choice-text">James Madison</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex justify-content-between">
-                  <button class="btn btn-secondary prev-btn" disabled>&larr; Prev</button>
-                  <div>
-                    <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Question 2 -->
-              <div class="carousel-item">
-                <div class="mb-3">
-                  <h5 class="card-title">2. Which empire built the Colosseum?</h5>
-                </div>
-                <div class="choices-form" data-index="1">
-                  <div class="choice-wrap" data-value="0">
-                    <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A</button>
-                    <div class="choice-text">Roman Empire</div>
-                  </div>
-                  <div class="choice-wrap" data-value="1">
-                    <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">B</button>
-                    <div class="choice-text">Greek Empire</div>
-                  </div>
-                  <div class="choice-wrap" data-value="2">
-                    <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">C</button>
-                    <div class="choice-text">Ottoman Empire</div>
-                  </div>
-                  <div class="choice-wrap" data-value="3">
-                    <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">D</button>
-                    <div class="choice-text">Persian Empire</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex justify-content-between">
-                  <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                  <div>
-                    <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Question 3 -->
-              <div class="carousel-item">
-                <div class="mb-3">
-                  <h5 class="card-title">3. The Magna Carta was signed in which year?</h5>
-                </div>
-                <div class="choices-form" data-index="2">
-                  <div class="choice-wrap" data-value="0">
-                    <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A</button>
-                    <div class="choice-text">1415</div>
-                  </div>
-                  <div class="choice-wrap" data-value="1">
-                    <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">B</button>
-                    <div class="choice-text">1066</div>
-                  </div>
-                  <div class="choice-wrap" data-value="2">
-                    <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">C</button>
-                    <div class="choice-text">1350</div>
-                  </div>
-                  <div class="choice-wrap" data-value="3">
-                    <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">D</button>
-                    <div class="choice-text">1215</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex justify-content-between">
-                  <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                  <div>
-                    <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Question 4 -->
-              <div class="carousel-item">
-                <div class="mb-3">
-                  <h5 class="card-title">4. Who discovered penicillin?</h5>
-                </div>
-                <div class="choices-form" data-index="3">
-                  <div class="choice-wrap" data-value="0">
-                    <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A</button>
-                    <div class="choice-text">Louis Pasteur</div>
-                  </div>
-                  <div class="choice-wrap" data-value="1">
-                    <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">B</button>
-                    <div class="choice-text">Marie Curie</div>
-                  </div>
-                  <div class="choice-wrap" data-value="2">
-                    <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">C</button>
-                    <div class="choice-text">Joseph Lister</div>
-                  </div>
-                  <div class="choice-wrap" data-value="3">
-                    <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">D</button>
-                    <div class="choice-text">Alexander Fleming</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex justify-content-between">
-                  <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                  <div>
-                    <button class="btn btn-primary next-btn" data-bs-target="#questionCarousel" data-bs-slide="next" disabled>Next &rarr;</button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Question 5 -->
-              <div class="carousel-item">
-                <div class="mb-3">
-                  <h5 class="card-title">5. Which dynasty ruled China immediately before the Ming?</h5>
-                </div>
-                <div class="choices-form" data-index="4">
-                  <div class="choice-wrap" data-value="0">
-                    <button type="button" class="choice-btn" data-value="0" aria-label="Choice A">A</button>
-                    <div class="choice-text">Yuan</div>
-                  </div>
-                  <div class="choice-wrap" data-value="1">
-                    <button type="button" class="choice-btn" data-value="1" aria-label="Choice B">B</button>
-                    <div class="choice-text">Qing</div>
-                  </div>
-                  <div class="choice-wrap" data-value="2">
-                    <button type="button" class="choice-btn" data-value="2" aria-label="Choice C">C</button>
-                    <div class="choice-text">Song</div>
-                  </div>
-                  <div class="choice-wrap" data-value="3">
-                    <button type="button" class="choice-btn" data-value="3" aria-label="Choice D">D</button>
-                    <div class="choice-text">Zhou</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex justify-content-between">
-                  <button class="btn btn-secondary prev-btn">&larr; Prev</button>
-                  <div>
-                    <button class="btn btn-success finish-btn" disabled id="finishBtn">Finish</button>
-                    <a href="leaderboard.html" class="btn btn-outline-primary ms-2 disabled" id="leaderboardLink" aria-disabled="true" tabindex="-1">See Leaderboard</a>
-                  </div>
-                </div>
-              </div>
+          <div class="col-auto">
+            <div class="input-group">
+              <label class="input-group-text" for="category">Category</label>
+              <select
+                class="form-select"
+                id="category"
+                aria-label="Category select"
+              >
+                <option value="history.html" selected>History</option>
+                <option value="sports.html">Sports</option>
+                <option value="art.html">Art</option>
+                <option value="geography.html">Geography</option>
+                <option value="index.html">Home</option>
+              </select>
             </div>
-            <div class="carousel-indicators mt-3">
-              <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Question 1"></button>
-              <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="1" aria-label="Question 2"></button>
-              <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="2" aria-label="Question 3"></button>
-              <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="3" aria-label="Question 4"></button>
-              <button type="button" data-bs-target="#questionCarousel" data-bs-slide-to="4" aria-label="Question 5"></button>
+          </div>
+        </div>
+
+        <div class="game-area">
+          <div class="card quiz-card" id="quiz-card" aria-live="polite">
+            <div class="card-body">
+              <!-- progress / score row -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div id="progress" class="small text-muted">
+                  Question <span id="q-index">1</span> /
+                  <span id="q-total">5</span>
+                </div>
+                <div id="score-display" class="badge bg-primary text-white">
+                  Score: <span id="score-count">0</span>
+                </div>
+              </div>
+              <h3 id="question-title" class="mb-3">Sample Question</h3>
+
+              <div id="answers"></div>
+              <!-- Action buttons -->
+
+              <div class="d-flex align-items-center mt-3">
+                <div class="btn-group" role="group" aria-label="left-actions">
+                  <button id="skip-question" class="btn btn-danger">
+                    Skip
+                  </button>
+                </div>
+                <button id="submit-answer" class="btn btn-primary ms-auto">
+                  Submit
+                </button>
+              </div>
+
+              <!-- Feedback area for correct/incorrect -->
+              <div
+                id="answer-feedback"
+                class="mt-2"
+                role="status"
+                aria-live="assertive"
+              ></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- Bootstrap JS bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Local quiz script -->
-    <script src="assets/js/geography.js"></script>
-    <!-- Result modal (shown after finishing the quiz) -->
-    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header border-0">
-            <h5 class="modal-title w-100" id="resultModalLabel">Congratulations!</h5>
-          </div>
-          <div class="modal-body">
-            <p id="resultMessage" class="lead mb-0"></p>
-          </div>
-          <div class="modal-footer justify-content-center border-0">
-            <a href="leaderboard.html" id="modalLeaderboardLink" class="btn btn-primary disabled" aria-disabled="true" tabindex="-1">See Leaderboard</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>QuizMaster • Demo app • Accessible and responsive</small>
+        <nav class="social-links" aria-label="Social media">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+            class="social-icon"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png"
+              alt="Facebook"
+            />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+            class="social-icon"
+          >
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://x.com"
+            target="_blank"
+            aria-label="X (Twitter)"
+            class="social-icon"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png"
+              alt="X"
+            />
+          </a>
+          <a href="about.html" id="about-link">About</a> |
+          <a href="docs.html" id="docs-link">Docs</a>
+        </nav>
       </div>
-    </div>
-    
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/history.js"></script>
   </body>
 </html>
-
-<footer class="site-footer" role="contentinfo">
-  <div class="container footer-inner">
-    <small>QuizMaster • Demo app • Accessible and responsive</small>
-    <nav class="social-links" aria-label="Social media">
-      <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
-        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook">
-      </a>
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
-        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram">
-      </a>
-      <a href="https://x.com" target="_blank" aria-label="X (Twitter)" class="social-icon">
-        <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="X">
-      </a>
-      <a href="about.html" id="about-link">About</a> |
-      <a href="docs.html" id="docs-link">Docs</a>
-    </nav>
-  </div>
-</footer>

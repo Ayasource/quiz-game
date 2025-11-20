@@ -36,16 +36,30 @@ document.addEventListener('DOMContentLoaded', function () {
   const skipBtn = document.getElementById('skip-question');
   const feedbackEl = document.getElementById('answer-feedback');
   const quizCard = document.getElementById('quiz-card');
+  const scoreCountEl = document.getElementById('score-count');
+  const qIndexEl = document.getElementById('q-index');
+  const qTotalEl = document.getElementById('q-total');
 
   let currentQuestion = 0;
   let score = 0;
   let selectedIndex = null;
+
+  function updateScore() {
+ if (scoreCountEl) scoreCountEl.textContent = String(score);
+  }
+
+ function updateProgress() {
+   if (qIndexEl) qIndexEl.textContent = String(Math.min(currentQuestion + 1, quizData.length));
+   if (qTotalEl) qTotalEl.textContent = String(quizData.length);
+  }
 
   function renderQuestion() {
     const q = quizData[currentQuestion];
     if (!q) return;
     // Title
     questionTitle.textContent = q.text;
+    updateProgress();
+    updateScore();
 
     // Clear answers
     answersEl.innerHTML = '';
