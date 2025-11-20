@@ -210,6 +210,10 @@ Use JavaScript to alert the inviter when friends join.
 ![Leaderboard page v2](<assets/images/Leaderboard page v2.png>)
 ![Quiz end screen](<assets/images/Quiz end screen.png>)
 
+### Website v5
+
+![Home page v5](<assets/images/Home page v5.png>)
+
 ## Code Development
 
 ### HTML
@@ -245,6 +249,8 @@ Use JavaScript to alert the inviter when friends join.
 ![Geography page v4 bug](<assets/images/Geography page v4 bug.png>)
 
 ![Home page v4 bug](<assets/images/Home page v4 bug.png>)
+
+![Home page bug v5](<assets/images/Home page bug v5.png>)
 
 ![home page bug v6](<assets/images/home page bug v6.png>)
 
@@ -312,6 +318,11 @@ Use JavaScript to alert the inviter when friends join.
 ![Responsive home page 1](assets/images/Responsive%20home%20page%201.png)
 ![Responsive home page 2](<assets/images/Responsive home page 2.png>)
 ![Responsive home page 3](<assets/images/Responsive home page 3.png>)
+
+![Responsive home 2 page 1](<assets/images/Responsive home 2 page 1.png>)
+![Responsive home 2 page 2](<assets/images/Responsive home 2 page 2.png>)
+![Responsive home 2 page 3](<assets/images/Responsive home 2 page 3.png>)
+![Responsive home 2 page 4](<assets/images/Responsive home 2 page 4.png>)
 
 ### Geography
 
@@ -390,6 +401,7 @@ Use JavaScript to alert the inviter when friends join.
 ![History page lighthouse v4](<assets/images/History page lighthouse v4.png>)
 ![Sports page lighthouse v4](<assets/images/Sports page lighthouse v4.png>)
 ![Leaderboard page lighthouse v2](<assets/images/Leaderboard page lighthouse v2.png>)
+
 #### Desktop 3
 
 ![Home page Desktop lighthouse v3](<assets/images/Home page Desktop lighthouse v3.png>)
@@ -403,15 +415,26 @@ Use JavaScript to alert the inviter when friends join.
 
 ### 5
 
+![Art page lighthouse v5](<assets/images/Art page lighthouse v5.png>)
+![Geography page lighthouse v5](<assets/images/Geography page lighthouse v5.png>)
+![History page lighthouse v5](<assets/images/History page lighthouse v5.png>)
+![Sports page lighthouse v5](<assets/images/Sports page lighthouse v5.png>)
 #### Desktop 4
 
 ![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
 ![Leaderboard page Desktop lighthouse v2](<assets/images/Leaderboard page Desktop lighthouse v2.png>)
 
 ### 6
+
 ![Home page lighthouse v6](<assets/images/Home page lighthouse v6.png>)
+
 #### Desktop 5
-![Home page Desktop lighthouse v5](<assets/images/Home page Desktop lighthouse v6.png>)
+
+![Home page Desktop lighthouse v6](<assets/images/Home page Desktop lighthouse v6.png>)
+![Geography page Desktop lighthouse v5](<assets/images/Geography page Desktop lighthouse v5.png>)
+![Art page Desktop lighthouse v5](<assets/images/Art page Desktop lighthouse v5.png>)
+![History page Desktop lighthouse v5](<assets/images/History page Desktop lighthouse v5.png>)
+![Sports page Desktop lighthouse v5](<assets/images/Sports page Desktop lighthouse v5.png>)
 
 #### Desktop 6
 
