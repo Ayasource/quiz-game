@@ -18,9 +18,8 @@
 ## About QuizMania
 
 Quizmaina is the an iteractive quiz game. Created by four collaberators using HTML, CSS and JavaScript.
-The website is comprised of a home page, a geography quiz, an art quiz, a history quiz and sports quiz and a leaderboard.
+The website is comprised of a home page, a geography quiz, an art quiz, a history quiz and sports quiz and a leader board.
     
-
 ## User Stories
 
 ### User friendly navigation and responsive design (must-have)
@@ -223,6 +222,9 @@ Use JavaScript to alert the inviter when friends join.
 ### Website v6
 
 ![Home page v6](<assets/images/Home page v6.png>)
+
+The background image was changed so that the title would stand out more:
+
 ![History page v6](<assets/images/History page v6.png>)
 
 ## Code Development
@@ -248,8 +250,6 @@ Use JavaScript to alert the inviter when friends join.
 ### JavaScript
 
 ![JS code 1](<assets/images/JS code 1.png>)
-
-## Working with Co-pilot
 
 ## Bugs
 ![First merge conflict](<assets/images/First merge conflict.png>)
@@ -325,21 +325,22 @@ Use JavaScript to alert the inviter when friends join.
 
 ## Features
 
-The user can only move onto the next question by using the skip button:
-(Code)
-
 ![js question array](<assets/images/js question array.png>)
 
-![js score update](<assets/images/js score update.png>)
-
-![js submit btn](<assets/images/js submitbtn.png>)
-
+The user can move onto the next question without answering it first, by using the skip button:
 ![js skip button](<assets/images/skip button.png>)
 
-![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
-![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
+The user can only click submit when they have selected an answer:
+![js submit button](<assets/images/js submitbtn.png>)
+
+The user's score updates eveytime they answer a question correctly:
+![js score update](<assets/images/js score update.png>)
 ![Score example](<assets/images/Score example.png>)
 ![Score example 2](<assets/images/Score example 2.png>)
+
+This feature is not functional as it dose not store the user's score:
+![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
+![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
 
 ## Responsive
 
@@ -510,16 +511,23 @@ The user can only move onto the next question by using the skip button:
 
 ## Review
 
+### Working with Co-pilot
+
+Some of our time was spent simplifying the code co-pilot suggested. 
+In the futre we would want to use it for much smaller code snippets.
+
 ### What Went Well:
 
 Setting goals at the start of each day and using meetings to check up on progress later on in the day.
 Spending the first day setting up the repository with individual working branches.  
-Creating the user stories together as a team.   
+Creating the user stories together as a team.
+Solving merge conflicts.   
 
 ### What We would Change:
 
 We would have practiced pair programming more, while working on the JavaScript. 
 
-
 ## Conclusion
+
+Our communication while sharing ideas and sorting out problems allowed us to finish the MVP version of our project.
 
