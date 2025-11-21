@@ -15,7 +15,11 @@
 
 
 
-## About QuizMaster
+## About QuizMania
+
+Quizmaina is the an iteractive quiz game. Created by four collaberators using HTML, CSS and JavaScript.
+The website is comprised of a home page, a geography quiz, an art quiz, a history quiz and sports quiz and a leaderboard.
+    
 
 ## User Stories
 
@@ -157,6 +161,7 @@ Use HTML so that people are redirected to the quiz lobby.
 Use JavaScript to alert the inviter when friends join.
 
 ## Wireframes
+
 ![Ayana wireframes 1](assets/images/wireframe%20v1.png)
 ![Ayana wireframes 2](<assets/images/wireframe v2.png>)
 
@@ -198,6 +203,7 @@ Use JavaScript to alert the inviter when friends join.
 ![About page v3](<assets/images/About page v3.png>)
 ![Doc page v3](<assets/images/Doc page v3.png>)
 ![Leaderboard page v1](assets/images/Leaderboard%20page%20v1.png)
+
 ### Website v4
 
 ![Home page v4](assets/images/Home%20page%20v4.png)
@@ -213,6 +219,11 @@ Use JavaScript to alert the inviter when friends join.
 ### Website v5
 
 ![Home page v5](<assets/images/Home page v5.png>)
+
+### Website v6
+
+![Home page v6](<assets/images/Home page v6.png>)
+![History page v6](<assets/images/History page v6.png>)
 
 ## Code Development
 
@@ -235,6 +246,7 @@ Use JavaScript to alert the inviter when friends join.
 ![Stuart css code 3](<assets/images/Stuart css code 3.png>)
 
 ### JavaScript
+
 ![JS code 1](<assets/images/JS code 1.png>)
 
 ## Working with Co-pilot
@@ -269,8 +281,11 @@ Use JavaScript to alert the inviter when friends join.
 ![geography html validator](<assets/images/geography html validator.png>)
 ![geography html validator 2](<assets/images/geography html validator 2.png>)
 ![geography html validator 3](<assets/images/geography html validator 3.png>)
+![geography html validator 4](<assets/images/geography html validator 4.png>)
+![geography html validator 5](<assets/images/geography html validator 5.png>)
 
 #### Art HTML
+
 ![art html validator](<assets/images/art html validator.png>)
 ![art html validator 2](<assets/images/art html validator 2.png>)
 ![art html validator 3](<assets/images/art html validator 3.png>)
@@ -286,6 +301,7 @@ Use JavaScript to alert the inviter when friends join.
 ![sports html validator](<assets/images/sports html validator.png>)
 ![sports html validator 2](<assets/images/sports html validator 2.png>)
 ![sports html validator 3](<assets/images/sports html validator 3.png>)
+
 #### About HTML
 
 ![about html validator](<assets/images/about html validator.png>)
@@ -306,6 +322,11 @@ Use JavaScript to alert the inviter when friends join.
 ![css validator](<assets/images/css validator.png>)
 
 ## Features
+
+The user can only move onto the next question by using the skip button:
+(Code)
+
+
 ![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
 ![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
 ![Score example](<assets/images/Score example.png>)
@@ -324,6 +345,9 @@ Use JavaScript to alert the inviter when friends join.
 ![Responsive home 2 page 3](<assets/images/Responsive home 2 page 3.png>)
 ![Responsive home 2 page 4](<assets/images/Responsive home 2 page 4.png>)
 
+![Responsive home 3 page 1](<assets/images/Responsive home 3 page 1.png>)
+![Responsive home 3 page 2](<assets/images/Responsive home 3 page 2.png>)
+
 ### Geography
 
 ![Responsive geography page 1](<assets/images/Responsive geography page 1.png>)
@@ -341,11 +365,14 @@ Use JavaScript to alert the inviter when friends join.
 ![Responsive history page 1](<assets/images/Responsive history page 1.png>)
 ![Responsive history page 2](<assets/images/Responsive history page 2.png>)
 ![Responsive history page 3](<assets/images/Responsive history page 3.png>)
+![Responsive history 3 page 1](<assets/images/Responsive history 3 page 1.png>)
+![Responsive history 3 page 2](<assets/images/Responsive history 3 page 2.png>)
 
 ### Sports
 
 ![Responsive sports page 1](<assets/images/Responsive sports page 1.png>)
 ![Responsive sports page 2](<assets/images/Responsive sports page 2.png>)
+
 ## Accessibility
 
 ### Lighthouse
@@ -360,6 +387,7 @@ Use JavaScript to alert the inviter when friends join.
 ![Doc page lighthouse 1](<assets/images/Doc page lighthouse 1.png>)
 
 #### 2
+
 ![Home page lighthouse v2](<assets/images/Home page lighthouse v2.png>)
 ![Geography page lighthouse v2](<assets/images/Geography page lighthouse v2.png>)
 ![Art page lighthouse v2](<assets/images/Art page lighthouse v2.png>)
@@ -369,6 +397,7 @@ Use JavaScript to alert the inviter when friends join.
 ![Doc page lighthouse v2](<assets/images/Doc page lighthouse v2.png>)
 
 #### Desktop
+
 ![Home page Desktop lighthouse v1](<assets/images/Home page Desktop lighthouse v1.png>)
 ![Geography page Desktop lighthouse v1](<assets/images/Geography page Desktop lighthouse v1.png>)
 ![Art page Desktop lighthouse v1](<assets/images/Art page Desktop lighthouse v1.png>)
@@ -385,6 +414,7 @@ Use JavaScript to alert the inviter when friends join.
 ![About page lighthouse v3](<assets/images/About page lighthouse v3.png>)
 ![Doc page lighthouse v3](<assets/images/Doc page lighthouse v3.png>)
 ![Leaderboard page lighthouse v1](<assets/images/Leaderboard page lighthouse v1.png>)
+
 #### Desktop 2
 
 ![Home page Desktop lighthouse v2](assets/images/Home%20page%20Desktop%20lighthouse%20v2.png)
@@ -419,7 +449,8 @@ Use JavaScript to alert the inviter when friends join.
 ![Geography page lighthouse v5](<assets/images/Geography page lighthouse v5.png>)
 ![History page lighthouse v5](<assets/images/History page lighthouse v5.png>)
 ![Sports page lighthouse v5](<assets/images/Sports page lighthouse v5.png>)
-![Home page lighthouse v5](assets/images/Home%20page%20lighthouse%20v5.png)
+![Home page lighthouse v5](<assets/images/Home page lighthouse v6.png>)
+
 #### Desktop 4
 
 ![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
@@ -427,7 +458,8 @@ Use JavaScript to alert the inviter when friends join.
 
 ### 6
 
-![Home page lighthouse v6](<assets/images/Home page lighthouse v6.png>)
+![Home page lighthouse v6](assets/images/Home%20page%20lighthouse%20v5.png)
+
 
 #### Desktop 5
 
@@ -438,15 +470,26 @@ Use JavaScript to alert the inviter when friends join.
 ![Sports page Desktop lighthouse v5](<assets/images/Sports page Desktop lighthouse v5.png>)
 
 #### Desktop 6
+
 ![Home page Desktop lighthouse v5](<assets/images/Home page Desktop lighthouse v5.png>)
 
+#### 7
+
+![Home page lighthouse v7](<assets/images/Home page lighthouse v7.png>)
+![History page lighthouse v6](<assets/images/History page lighthouse v6.png>)
+
+#### Desktop 7
+
+![Home page Desktop lighthouse v7](<assets/images/Home page Desktop lighthouse v7.png>)
+![History page Desktop lighthouse v6](<assets/images/History page Desktop lighthouse v6.png>)
+
 ## Miscellaneous
+
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
 
 ![geography1](assets/images/geography1.jpg)
 
 ![quiz-logo](assets/bayan-images/quiz-logo.png)
-
 
 ![art-image](assets/images/art-image.jpg)
 
@@ -455,4 +498,19 @@ Use JavaScript to alert the inviter when friends join.
 ![questions-image](assets/images/questions-image.jpg)
 
 ![sports-image](assets/images/sports-image.jpg)
+
+## Review
+
+### What Went Well:
+
+Setting goals at the start of each day and using meetings to check up on progress later on in the day.
+Spending the first day setting up the repository with individual working branches.  
+Creating the user stories together as a team.   
+
+### What We would Change:
+
+We would have practiced pair programming more, while working on the JavaScript. 
+
+
+## Conclusion
 
