@@ -9,8 +9,9 @@
 7. Bugs
 8. Code Validators
 9. Features
-10. Accessibility
-11. Miscellaneous
+10. Responsive
+11. Accessibility
+12. Miscellaneous
 
 
 
@@ -169,14 +170,6 @@ Use JavaScript to alert the inviter when friends join.
 ![Stuart wireframe 1](assets/images/Stuart%20wireframe.png)
 ![Stuart wireframe 2](assets/images/Stuart%20wireframe%202.png)
 
-<<<<<<< HEAD
-## Website
-
-#### Website
-
-
-#### Code
-=======
 ## Website Iterations
 
 ![Stuart front page v1](<assets/images/Stuart front page v1.png>)
@@ -217,6 +210,10 @@ Use JavaScript to alert the inviter when friends join.
 ![Leaderboard page v2](<assets/images/Leaderboard page v2.png>)
 ![Quiz end screen](<assets/images/Quiz end screen.png>)
 
+### Website v5
+
+![Home page v5](<assets/images/Home page v5.png>)
+
 ## Code Development
 
 ### HTML
@@ -253,14 +250,102 @@ Use JavaScript to alert the inviter when friends join.
 
 ![Home page v4 bug](<assets/images/Home page v4 bug.png>)
 
+![Home page bug v5](<assets/images/Home page bug v5.png>)
+
+![home page bug v6](<assets/images/home page bug v6.png>)
 
 ## Code Validators
+
+### W3c Validator
+
+#### Index HTML
+
+![index html validator](<assets/images/index html validator.png>)
+![index html validator 2](<assets/images/index html validator 2.png>)
+![index html validator 3](<assets/images/index html validator 3.png>)
+
+#### Geography HTML
+
+![geography html validator](<assets/images/geography html validator.png>)
+![geography html validator 2](<assets/images/geography html validator 2.png>)
+![geography html validator 3](<assets/images/geography html validator 3.png>)
+
+#### Art HTML
+![art html validator](<assets/images/art html validator.png>)
+![art html validator 2](<assets/images/art html validator 2.png>)
+![art html validator 3](<assets/images/art html validator 3.png>)
+
+#### History HTML
+
+![history html validator](<assets/images/history html validator.png>)
+![history html validator 2](<assets/images/history html validator 2.png>)
+![history html validator 3](<assets/images/history html validator 3.png>)
+
+#### Sports HTML
+
+![sports html validator](<assets/images/sports html validator.png>)
+![sports html validator 2](<assets/images/sports html validator 2.png>)
+![sports html validator 3](<assets/images/sports html validator 3.png>)
+#### About HTML
+
+![about html validator](<assets/images/about html validator.png>)
+![about html validator 2](<assets/images/about html validator 2.png>)
+
+#### Doc HTML
+
+![doc html validator](<assets/images/doc html validator.png>)
+![doc html validator 2](<assets/images/doc html validator 2.png>)
+
+#### Leaderboard
+
+![leaderboard html validator](<assets/images/leaderboard html validator.png>)
+![leaderboard html validator 2](<assets/images/leaderboard html validator 2.png>)
+
+### CSS Validator
+
+![css validator](<assets/images/css validator.png>)
 
 ## Features
 ![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
 ![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
 ![Score example](<assets/images/Score example.png>)
 ![Score example 2](<assets/images/Score example 2.png>)
+
+## Responsive
+
+### Home 
+
+![Responsive home page 1](assets/images/Responsive%20home%20page%201.png)
+![Responsive home page 2](<assets/images/Responsive home page 2.png>)
+![Responsive home page 3](<assets/images/Responsive home page 3.png>)
+
+![Responsive home 2 page 1](<assets/images/Responsive home 2 page 1.png>)
+![Responsive home 2 page 2](<assets/images/Responsive home 2 page 2.png>)
+![Responsive home 2 page 3](<assets/images/Responsive home 2 page 3.png>)
+![Responsive home 2 page 4](<assets/images/Responsive home 2 page 4.png>)
+
+### Geography
+
+![Responsive geography page 1](<assets/images/Responsive geography page 1.png>)
+![Responsive geography page 2](<assets/images/Responsive geography page 2.png>)
+![Responsive geography page 3](<assets/images/Responsive geography page 3.png>)
+
+### Art
+
+![Responsive art page 1](<assets/images/Responsive art page 1.png>)
+![Responsive art page 2](<assets/images/Responsive art page 2.png>)
+![Responsive art page 3](<assets/images/Responsive art page 3.png>)
+
+### History
+
+![Responsive history page 1](<assets/images/Responsive history page 1.png>)
+![Responsive history page 2](<assets/images/Responsive history page 2.png>)
+![Responsive history page 3](<assets/images/Responsive history page 3.png>)
+
+### Sports
+
+![Responsive sports page 1](<assets/images/Responsive sports page 1.png>)
+![Responsive sports page 2](<assets/images/Responsive sports page 2.png>)
 ## Accessibility
 
 ### Lighthouse
@@ -268,11 +353,11 @@ Use JavaScript to alert the inviter when friends join.
 #### 1
 
 ![Home page lighthouse 1](<assets/images/Home page lighthouse 1.png>)
-![About page lighthouse 1](<assets/images/About page lighthouse 1.png>)
-![Doc page lighthouse 1](<assets/images/Doc page lighthouse 1.png>)
+![Art page lighthouse 1](<assets/images/Art page lighthouse 1.png>)
 ![Geography page lighthouse 1](<assets/images/Geography page lighthouse 1.png>)
 ![History page lighthouse 1](<assets/images/History page lighthouse 1.png>)
-![Art page lighthouse 1](<assets/images/Art page lighthouse 1.png>)
+![About page lighthouse 1](<assets/images/About page lighthouse 1.png>)
+![Doc page lighthouse 1](<assets/images/Doc page lighthouse 1.png>)
 
 #### 2
 ![Home page lighthouse v2](<assets/images/Home page lighthouse v2.png>)
@@ -316,6 +401,7 @@ Use JavaScript to alert the inviter when friends join.
 ![History page lighthouse v4](<assets/images/History page lighthouse v4.png>)
 ![Sports page lighthouse v4](<assets/images/Sports page lighthouse v4.png>)
 ![Leaderboard page lighthouse v2](<assets/images/Leaderboard page lighthouse v2.png>)
+
 #### Desktop 3
 
 ![Home page Desktop lighthouse v3](<assets/images/Home page Desktop lighthouse v3.png>)
@@ -326,9 +412,33 @@ Use JavaScript to alert the inviter when friends join.
 ![About page Desktop lighthouse v3](<assets/images/About page Desktop lighthouse v3.png>)
 ![Doc page Desktop lighthouse v3](<assets/images/Doc page Desktop lighthouse v3.png>)
 ![Leaderboard page Desktop lighthouse v1](assets/images/Leaderboard%20page%20Desktop%20lighthouse%20v1.png)
+
+### 5
+
+![Art page lighthouse v5](<assets/images/Art page lighthouse v5.png>)
+![Geography page lighthouse v5](<assets/images/Geography page lighthouse v5.png>)
+![History page lighthouse v5](<assets/images/History page lighthouse v5.png>)
+![Sports page lighthouse v5](<assets/images/Sports page lighthouse v5.png>)
+![Home page lighthouse v5](assets/images/Home%20page%20lighthouse%20v5.png)
 #### Desktop 4
+
 ![Geography page lighthouse v4](<assets/images/Geography page lighthouse v4.png>)
 ![Leaderboard page Desktop lighthouse v2](<assets/images/Leaderboard page Desktop lighthouse v2.png>)
+
+### 6
+
+![Home page lighthouse v6](<assets/images/Home page lighthouse v6.png>)
+
+#### Desktop 5
+
+![Home page Desktop lighthouse v6](<assets/images/Home page Desktop lighthouse v6.png>)
+![Geography page Desktop lighthouse v5](<assets/images/Geography page Desktop lighthouse v5.png>)
+![Art page Desktop lighthouse v5](<assets/images/Art page Desktop lighthouse v5.png>)
+![History page Desktop lighthouse v5](<assets/images/History page Desktop lighthouse v5.png>)
+![Sports page Desktop lighthouse v5](<assets/images/Sports page Desktop lighthouse v5.png>)
+
+#### Desktop 6
+![Home page Desktop lighthouse v5](<assets/images/Home page Desktop lighthouse v5.png>)
 
 ## Miscellaneous
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
@@ -336,7 +446,6 @@ Use JavaScript to alert the inviter when friends join.
 ![geography1](assets/images/geography1.jpg)
 
 ![quiz-logo](assets/bayan-images/quiz-logo.png)
->>>>>>> main
 
 
 ![art-image](assets/images/art-image.jpg)
