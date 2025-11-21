@@ -266,6 +266,8 @@ Use JavaScript to alert the inviter when friends join.
 
 ![home page bug v6](<assets/images/home page bug v6.png>)
 
+![css bug](<assets/images/css bug.png>)
+
 ## Code Validators
 
 ### W3c Validator
@@ -326,6 +328,13 @@ Use JavaScript to alert the inviter when friends join.
 The user can only move onto the next question by using the skip button:
 (Code)
 
+![js question array](<assets/images/js question array.png>)
+
+![js score update](<assets/images/js score update.png>)
+
+![js submit btn](<assets/images/js submitbtn.png>)
+
+![js skip button](<assets/images/skip button.png>)
 
 ![Leaderboard clear notification](<assets/images/Leaderboard clear notification.png>)
 ![Leaderboard cleared](<assets/images/Leaderboard cleared.png>)
