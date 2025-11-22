@@ -217,9 +217,13 @@ Use JavaScript to alert the inviter when friends join.
 
 ### Website v5
 
+The the Doc and About pages have been removed:
+
 ![Home page v5](<assets/images/Home page v5.png>)
 
 ### Website v6
+
+The social media icons were changes to stand out more:
 
 ![Home page v6](<assets/images/Home page v6.png>)
 
@@ -498,6 +502,8 @@ This feature is not functional as it dose not store the user's score:
 ![quizmaster-favicon](assets/images/quizmaster-favicon.png)
 
 ![geography1](assets/images/geography1.jpg)
+
+The favicon now matches the logo of the website:
 
 ![quiz-logo](assets/bayan-images/quiz-logo.png)
 
